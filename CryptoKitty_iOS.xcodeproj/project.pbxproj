@@ -10,6 +10,18 @@
 		550AB39F1DF8E8EE00960773 /* CryptoKitty_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550AB3951DF8E8ED00960773 /* CryptoKitty_iOS.framework */; };
 		550AB3A41DF8E8EE00960773 /* CryptoKitty_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 550AB3A31DF8E8EE00960773 /* CryptoKitty_iOSTests.m */; };
 		550AB3A61DF8E8EE00960773 /* CryptoKitty_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 550AB3981DF8E8ED00960773 /* CryptoKitty_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		550AB3B01DF8EAC100960773 /* libntl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 550AB3AF1DF8EAC100960773 /* libntl.a */; };
+		550AB3B11DF8EAC100960773 /* libntl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 550AB3AF1DF8EAC100960773 /* libntl.a */; };
+		550AB3B31DF8EAEF00960773 /* BigInteger.cc in Sources */ = {isa = PBXBuildFile; fileRef = 550AB3B21DF8EAEF00960773 /* BigInteger.cc */; };
+		550AB3B41DF8EAEF00960773 /* BigInteger.cc in Sources */ = {isa = PBXBuildFile; fileRef = 550AB3B21DF8EAEF00960773 /* BigInteger.cc */; };
+		550AB3B61DF8EB1E00960773 /* BigInteger.h in Headers */ = {isa = PBXBuildFile; fileRef = 550AB3B51DF8EB1E00960773 /* BigInteger.h */; };
+		550AB3B81DF8EBB400960773 /* ByteArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 550AB3B71DF8EBB400960773 /* ByteArray.h */; };
+		550AB3BA1DF8EBD200960773 /* libcoder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 550AB3B91DF8EBD200960773 /* libcoder.a */; };
+		550AB3BB1DF8EBD200960773 /* libcoder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 550AB3B91DF8EBD200960773 /* libcoder.a */; };
+		550AB3BD1DF8ED1500960773 /* Random.h in Headers */ = {isa = PBXBuildFile; fileRef = 550AB3BC1DF8ED1500960773 /* Random.h */; };
+		550AB3BF1DF8ED3C00960773 /* BadParameterException.h in Headers */ = {isa = PBXBuildFile; fileRef = 550AB3BE1DF8ED3C00960773 /* BadParameterException.h */; };
+		550AB3C11DF8ED6600960773 /* Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = 550AB3C01DF8ED6600960773 /* Exception.h */; };
+		550AB3C31DF8EDC300960773 /* ZZ.h in Headers */ = {isa = PBXBuildFile; fileRef = 550AB3C21DF8EDC300960773 /* ZZ.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +41,15 @@
 		550AB39E1DF8E8EE00960773 /* CryptoKitty_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoKitty_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		550AB3A31DF8E8EE00960773 /* CryptoKitty_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptoKitty_iOSTests.m; sourceTree = "<group>"; };
 		550AB3A51DF8E8EE00960773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		550AB3AF1DF8EAC100960773 /* libntl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libntl.a; sourceTree = "<group>"; };
+		550AB3B21DF8EAEF00960773 /* BigInteger.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BigInteger.cc; sourceTree = "<group>"; };
+		550AB3B51DF8EB1E00960773 /* BigInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigInteger.h; sourceTree = "<group>"; };
+		550AB3B71DF8EBB400960773 /* ByteArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByteArray.h; sourceTree = "<group>"; };
+		550AB3B91DF8EBD200960773 /* libcoder.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcoder.a; sourceTree = "<group>"; };
+		550AB3BC1DF8ED1500960773 /* Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Random.h; sourceTree = "<group>"; };
+		550AB3BE1DF8ED3C00960773 /* BadParameterException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadParameterException.h; sourceTree = "<group>"; };
+		550AB3C01DF8ED6600960773 /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		550AB3C21DF8EDC300960773 /* ZZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZ.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				550AB3B01DF8EAC100960773 /* libntl.a in Frameworks */,
+				550AB3BA1DF8EBD200960773 /* libcoder.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				550AB3B11DF8EAC100960773 /* libntl.a in Frameworks */,
+				550AB3BB1DF8EBD200960773 /* libcoder.a in Frameworks */,
 				550AB39F1DF8E8EE00960773 /* CryptoKitty_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,8 +96,17 @@
 		550AB3971DF8E8ED00960773 /* CryptoKitty_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				550AB3B21DF8EAEF00960773 /* BigInteger.cc */,
+				550AB3B51DF8EB1E00960773 /* BigInteger.h */,
+				550AB3B71DF8EBB400960773 /* ByteArray.h */,
+				550AB3C01DF8ED6600960773 /* Exception.h */,
+				550AB3BE1DF8ED3C00960773 /* BadParameterException.h */,
 				550AB3981DF8E8ED00960773 /* CryptoKitty_iOS.h */,
+				550AB3BC1DF8ED1500960773 /* Random.h */,
+				550AB3C21DF8EDC300960773 /* ZZ.h */,
 				550AB3991DF8E8ED00960773 /* Info.plist */,
+				550AB3AF1DF8EAC100960773 /* libntl.a */,
+				550AB3B91DF8EBD200960773 /* libcoder.a */,
 			);
 			path = CryptoKitty_iOS;
 			sourceTree = "<group>";
@@ -93,7 +127,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				550AB3BF1DF8ED3C00960773 /* BadParameterException.h in Headers */,
+				550AB3B81DF8EBB400960773 /* ByteArray.h in Headers */,
+				550AB3B61DF8EB1E00960773 /* BigInteger.h in Headers */,
+				550AB3C31DF8EDC300960773 /* ZZ.h in Headers */,
 				550AB3A61DF8E8EE00960773 /* CryptoKitty_iOS.h in Headers */,
+				550AB3C11DF8ED6600960773 /* Exception.h in Headers */,
+				550AB3BD1DF8ED1500960773 /* Random.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				550AB3B31DF8EAEF00960773 /* BigInteger.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				550AB3A41DF8E8EE00960773 /* CryptoKitty_iOSTests.m in Sources */,
+				550AB3B41DF8EAEF00960773 /* BigInteger.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +366,10 @@
 				INFOPLIST_FILE = CryptoKitty_iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CryptoKitty_iOS",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.CryptoKitty.CryptoKitty-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -341,6 +387,10 @@
 				INFOPLIST_FILE = CryptoKitty_iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CryptoKitty_iOS",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.CryptoKitty.CryptoKitty-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -352,6 +402,10 @@
 			buildSettings = {
 				INFOPLIST_FILE = CryptoKitty_iOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CryptoKitty_iOS",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.CryptoKitty.CryptoKitty-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -362,6 +416,10 @@
 			buildSettings = {
 				INFOPLIST_FILE = CryptoKitty_iOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CryptoKitty_iOS",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.CryptoKitty.CryptoKitty-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
