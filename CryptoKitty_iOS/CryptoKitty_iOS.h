@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double CryptoKitty_iOSVersionNumber;
 FOUNDATION_EXPORT const unsigned char CryptoKitty_iOSVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <CryptoKitty_iOS/PublicHeader.h>
-
-

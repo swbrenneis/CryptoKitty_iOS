@@ -1,0 +1,6 @@
+framework module NTL_iOS {
+  umbrella header "NTL_iOS.h"
+
+  export *
+  module * { export * }
+}

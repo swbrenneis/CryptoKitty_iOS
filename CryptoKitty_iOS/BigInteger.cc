@@ -4,7 +4,7 @@
 #include <algorithm>
 #include <climits>
 #include <cmath>
-#include "ZZ.h"
+#include "NTL/ZZ.h"
 
 namespace CK {
 
@@ -15,8 +15,6 @@ const BigInteger BigInteger::ZERO;
 const BigInteger BigInteger::ONE(1);
 const unsigned long long
     BigInteger::ULLONG_MSB = (ULLONG_MAX >> 1) ^ ULLONG_MAX;
-const int BigInteger::BIGENDIAN = 1;
-const int BigInteger::LITTLEENDIAN = 2;
 
 /* Uses small coprime test, 64 rounds of Miller-Rabin, and
  * tests for Germain primality, if indicated.
@@ -84,10 +82,10 @@ BigInteger::BigInteger(long initial)
 /*
  * Construct a BigInteger from a byte array
  */
-BigInteger::BigInteger(const coder::ByteArray& bytes, int endian)
+BigInteger::BigInteger(const coder::ByteArray& bytes)
 : number(0) {
 
-    decode(bytes, endian);
+    decode(bytes);
 
 }
 
@@ -217,16 +215,16 @@ BigInteger BigInteger::And(const BigInteger& logical) const {
  */
 int BigInteger::bitLength() const {
 
-    return NTL::NumBits(*number);
+    return static_cast<int>(NTL::NumBits(*number));
 
 }
 
 /*
- * Returns the number of bit in the encoded representation of this integer.
+ * Returns the number of bits in the encoded representation of this integer.
  */
 int BigInteger::bitSize() const {
 
-    coder::ByteArray enc(getEncoded(BIGENDIAN));
+    coder::ByteArray enc(getEncoded());
     return enc.getLength() * 8;
 
 }
@@ -234,28 +232,17 @@ int BigInteger::bitSize() const {
 /*
  * Decode a byte array with the indicated byte order.
  */
-void BigInteger::decode(const coder::ByteArray& bytes, int endian) {
+void BigInteger::decode(const coder::ByteArray& bytes) {
 
     delete number;
     number = new NTL::ZZ(0L);
     int bl = bytes.getLength(); // have to do this so the indexes
                                 // don't wrap.
     
-    switch (endian) {
-        case BIGENDIAN:
-            for (int n = 0; n < bl; ++n) {
-                *number = *number << 8;
-                *number |= bytes[n];
-            }
-            break;
-        case LITTLEENDIAN:
-            for (int n = bl - 1; n >= 0; --n) {
-                *number = *number << 8;
-                *number |= bytes[n];
-            }
-            break;
-        default:
-            throw BadParameterException("Illegal endian value");
+    // Start at index = 1. First byte is the sign byte. Always zero.
+    for (int n = 1; n < bl; ++n) {
+        *number = *number << 8;
+        *number |= bytes[n];
     }
 
 }
@@ -291,7 +278,7 @@ BigInteger BigInteger::gcd(const BigInteger& a) const {
  * Encodes the absolute value of the integer into an array
  * in the specified byte order.
  */
-coder::ByteArray BigInteger::getEncoded(int endian) const {
+coder::ByteArray BigInteger::getEncoded() const {
 
     NTL::ZZ work(NTL::abs(*number));
     double bl = bitLength();
@@ -302,19 +289,11 @@ coder::ByteArray BigInteger::getEncoded(int endian) const {
     coder::ByteArray result;
     while (index > 0) {
         long byte = work % 256;
-        switch (endian) {
-            case BIGENDIAN:
-                result.push(byte & 0xff);
-                break;
-            case LITTLEENDIAN:
-                result.append(byte & 0xff);
-                break;
-            default:
-                throw BadParameterException("Invalid byte order");
-        }
+        result.push(byte & 0xff);
         work = work / 256;
         index --;
     }
+    result.push(0);
     return result;
 
 }

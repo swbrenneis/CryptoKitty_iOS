@@ -1,7 +1,7 @@
 #ifndef BIGINTEGER_H_INCLUDED
 #define BIGINTEGER_H_INCLUDED
 
-#include "ByteArray.h"
+#include "coder/ByteArray.h"
 #include <deque>
 #include <iostream>
 
@@ -20,8 +20,6 @@ class Random;
 class BigInteger {
 
     public:
-        static const int LITTLEENDIAN;
-        static const int BIGENDIAN;
         static const BigInteger ZERO;
         static const BigInteger ONE;
 
@@ -36,7 +34,8 @@ class BigInteger {
         // Constructs a BigInteger object with a value of 0 
         BigInteger();
         BigInteger(const BigInteger& other);
-        BigInteger(const coder::ByteArray& bytes, int endian);
+        // Constructs a BigInteger object from a BigEndian encoded array
+        BigInteger(const coder::ByteArray& bytes);
         // Constructs a BigInteger object with initial value
         BigInteger(long intial);
         // Constructs a BigInteger object with a probablistic
@@ -67,8 +66,6 @@ class BigInteger {
         int bitLength() const;
         // Returns the total number of bits
         int bitSize() const;
-        // Decode a byte array
-        void decode(const coder::ByteArray& bytes, int endian);
         // Returns a BigInteger equal to this divided by divisor.
         BigInteger divide(const BigInteger& divisor) const;
         // Returns true if this = other.
@@ -76,7 +73,7 @@ class BigInteger {
         // Returns the greatest common denominator of this and a.
         BigInteger gcd(const BigInteger& a) const;
         // Returns a coder::ByteArray in the specified encoding.
-        coder::ByteArray getEncoded(int endian) const;
+        coder::ByteArray getEncoded() const;
         // Returns a BigInteger that is the bitwise inversion of this.
         BigInteger invert() const;
         // Returns a BigInteger equal to this shifted left count times.
@@ -111,6 +108,10 @@ class BigInteger {
 
     public:
         void out(std::ostream& o) const;
+
+    private:
+        // Decode a byte array
+        void decode(const coder::ByteArray& bytes);
 
     private:
         NTL::ZZ *number;
