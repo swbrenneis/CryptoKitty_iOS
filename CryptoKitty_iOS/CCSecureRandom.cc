@@ -7,9 +7,9 @@
 //
 
 #include "CCSecureRandom.h"
-#include "coder/ByteArray.h"
-#include "coder/Unsigned32.h"
-#include "coder/Unsigned64.h"
+#include "ByteArray.h"
+#include "Unsigned32.h"
+#include "Unsigned64.h"
 #include <CommonCrypto/CommonCrypto.h>
 #include <CommonCrypto/CommonRandom.h>
 
@@ -56,7 +56,7 @@ namespace CK {
         int size = bytes.getLength();
         std::unique_ptr<uint8_t[]> rbytes(new uint8_t[size]);
         CCRandomGenerateBytes(rbytes.get(), size);
-        bytes.copy(0, rbytes.get(), size);
+        bytes.copy(0, rbytes.get(), 0, size);
         
     }
     

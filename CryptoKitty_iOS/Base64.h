@@ -1,7 +1,7 @@
 #ifndef BASE64_H_INCLUDED
 #define BASE64_H_INCLUDED
 
-#include <coder/ByteArray.h>
+#include "ByteArray.h"
 #include <iostream>
 
 namespace CK {

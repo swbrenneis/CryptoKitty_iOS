@@ -1,7 +1,7 @@
 #ifndef DERCODEC_H_INCLUDED
 #define DERCODEC_H_INCLUDED
 
-#include <coder/ByteArray.h>
+#include "ByteArray.h"
 
 namespace coder {
     class ByteArrayInputStream;

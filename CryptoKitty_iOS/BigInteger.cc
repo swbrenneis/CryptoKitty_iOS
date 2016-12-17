@@ -4,7 +4,7 @@
 #include <algorithm>
 #include <climits>
 #include <cmath>
-#include "NTL/ZZ.h"
+#include <NTL_iOS/ZZ.h>
 
 namespace CK {
 
@@ -110,6 +110,7 @@ BigInteger::BigInteger(int bits, bool sgPrime, Random& rnd) {
     for (unsigned n = 1; n < pBytes.getLength(); ++n) {
         work = (work * 256) + pBytes[n];
     }
+    std::cout << "work = " << work << std::endl;
 
     // Make sure it's positive.
     if (work < 0) {

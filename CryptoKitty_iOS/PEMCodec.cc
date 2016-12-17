@@ -6,11 +6,11 @@
 #include "RSAPrivateCrtKey.h"
 #include "RSAPrivateModKey.h"
 #include "EncodingException.h"
-#include <coder/ByteArray.h>
-#include <coder/ByteArrayInputStream.h>
-#include <coder/ByteArrayOutputStream.h>
-#include <coder/Unsigned16.h>
-#include <coder/Unsigned32.h>
+#include "ByteArray.h"
+#include "ByteArrayInputStream.h"
+#include "ByteArrayOutputStream.h"
+#include "Unsigned16.h"
+#include "Unsigned32.h"
 #include <sstream>
 
 namespace CK {

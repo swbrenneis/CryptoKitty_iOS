@@ -40,13 +40,18 @@ KeyPair<RSAPublicKey, RSAPrivateKey> *RSAKeyPairGenerator::generateKeyPair(bool 
 
     // Create SG primes.
     BigInteger p(keySize / 2, false, *random);
+    std::cout << p << std::endl;
     BigInteger q(keySize / 2, false, *random);
+    std::cout << q << std::endl;
     // Get the modulus and make sure it is the right bit size.
     BigInteger n = p * q;
-    while (n.bitLength() != keySize) {
+    std::cout << n << std::endl;
+    int bitlength = n.bitLength();
+    while (bitlength != keySize) {
         q = BigInteger(keySize / 2, false, *random);
         p = BigInteger(keySize / 2, false, *random);
         n = p * q;
+        bitlength = n.bitLength();
     }
 
     // Calculate phi(n) = (p - 1) * (q - 1)

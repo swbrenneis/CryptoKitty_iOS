@@ -1,7 +1,7 @@
 #ifndef BIGINTEGER_H_INCLUDED
 #define BIGINTEGER_H_INCLUDED
 
-#include "coder/ByteArray.h"
+#include "ByteArray.h"
 #include <deque>
 #include <iostream>
 

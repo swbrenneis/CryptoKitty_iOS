@@ -1,7 +1,7 @@
 #ifndef DIGEST_H_INCLUDED
 #define DIGEST_H_INCLUDED
 
-#include "coder/ByteArray.h"
+#include "ByteArray.h"
 #include <string>
 #include <cstdint>
 

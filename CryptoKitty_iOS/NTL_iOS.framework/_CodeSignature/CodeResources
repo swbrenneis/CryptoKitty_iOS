@@ -4,13 +4,77 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/HAVE_AVX.h</key>
+		<data>
+		HVkKlPGXUDTNfZSvGQQLPgPNceg=
+		</data>
+		<key>Headers/HAVE_BUILTIN_CLZL.h</key>
+		<data>
+		OboKqC0iWbqYF+Ut2lx2d38HhuI=
+		</data>
+		<key>Headers/HAVE_FMA.h</key>
+		<data>
+		bhQRvK3Yl3jCD872HT/yS/tZVvg=
+		</data>
+		<key>Headers/HAVE_LL_TYPE.h</key>
+		<data>
+		hbLXVqL9HBD/6gRZY9f8hh4cZlA=
+		</data>
 		<key>Headers/NTL_iOS.h</key>
 		<data>
 		ea9n9IdNnZ71oFjkj3+0hqMfAMs=
 		</data>
+		<key>Headers/SmartPtr.h</key>
+		<data>
+		2cLE1yHu8Dd+3yQtJyVLsU0udc0=
+		</data>
 		<key>Headers/ZZ.h</key>
 		<data>
 		EsT5swp+euHyRYcHRNoN4nzC4zc=
+		</data>
+		<key>Headers/config.h</key>
+		<data>
+		UbM1ESCXXb+vf1D/n1IlhpUBIVE=
+		</data>
+		<key>Headers/ctools.h</key>
+		<data>
+		zwOhy6MPObFz0iuXi78S2AYIxHk=
+		</data>
+		<key>Headers/g_lip.h</key>
+		<data>
+		GVpFirFnAVtvuU32roXJgUybrTY=
+		</data>
+		<key>Headers/gmp_aux.h</key>
+		<data>
+		L+pd6CaAtmLqjm/f+mjB1/0g6Y4=
+		</data>
+		<key>Headers/lip.h</key>
+		<data>
+		g5gIcXoPJbpovCOsXrdcsU9rjK0=
+		</data>
+		<key>Headers/mach_desc.h</key>
+		<data>
+		6MXWT5X3GcVlESlkH9ljcRSuxRw=
+		</data>
+		<key>Headers/new.h</key>
+		<data>
+		bzc4tRXUqr3Ttf91cBbmYaRJ0Pw=
+		</data>
+		<key>Headers/sp_arith.h</key>
+		<data>
+		Q58XU9aWiUegG2WMFsefzis/G60=
+		</data>
+		<key>Headers/thread.h</key>
+		<data>
+		OMCGFYFTL7EefPAGtE20Z/X25X8=
+		</data>
+		<key>Headers/tools.h</key>
+		<data>
+		I350ckWRjdQvSEtAmKkuNpqvD10=
+		</data>
+		<key>Headers/vector.h</key>
+		<data>
+		w4OuLjj9o2GW2C2qcfxtTHErMro=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -23,6 +87,50 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/HAVE_AVX.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HVkKlPGXUDTNfZSvGQQLPgPNceg=
+			</data>
+			<key>hash2</key>
+			<data>
+			SX4JwjfQoJmBZh0jm15FErKRk3XUVV7Rv3uahqKtGm4=
+			</data>
+		</dict>
+		<key>Headers/HAVE_BUILTIN_CLZL.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OboKqC0iWbqYF+Ut2lx2d38HhuI=
+			</data>
+			<key>hash2</key>
+			<data>
+			wvm/X1t1Y+f7s6UXJ+1Q7IjWMoZel48d4PNWcYBNKEU=
+			</data>
+		</dict>
+		<key>Headers/HAVE_FMA.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bhQRvK3Yl3jCD872HT/yS/tZVvg=
+			</data>
+			<key>hash2</key>
+			<data>
+			FvpiqNVm7jCqWHOa+z8W/s/Kg3vcCg/5xnBp4PAXN00=
+			</data>
+		</dict>
+		<key>Headers/HAVE_LL_TYPE.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hbLXVqL9HBD/6gRZY9f8hh4cZlA=
+			</data>
+			<key>hash2</key>
+			<data>
+			fysz9fORSRvrOlhaYuDkjJHFB52CQ8dZll8Xm+TJmLE=
+			</data>
+		</dict>
 		<key>Headers/NTL_iOS.h</key>
 		<dict>
 			<key>hash</key>
@@ -34,6 +142,17 @@
 			Mx8DiaRYiBsEQPe1sj03Pr88Km1N5rNUCb/nEyd4Zg0=
 			</data>
 		</dict>
+		<key>Headers/SmartPtr.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2cLE1yHu8Dd+3yQtJyVLsU0udc0=
+			</data>
+			<key>hash2</key>
+			<data>
+			mS8Xu84pHV5FnIKGVC7WR4h7AJCWLR+/AHiNEuWUQZ8=
+			</data>
+		</dict>
 		<key>Headers/ZZ.h</key>
 		<dict>
 			<key>hash</key>
@@ -43,6 +162,127 @@
 			<key>hash2</key>
 			<data>
 			daCLzYGY7xC1hoPzj9u7KPN8wkLdHHfgUR/FKKI+r4I=
+			</data>
+		</dict>
+		<key>Headers/config.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UbM1ESCXXb+vf1D/n1IlhpUBIVE=
+			</data>
+			<key>hash2</key>
+			<data>
+			i9YVpU6H7eOgKu1dTnTlQMhuHxcQXTtfVvluIYbzC8g=
+			</data>
+		</dict>
+		<key>Headers/ctools.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zwOhy6MPObFz0iuXi78S2AYIxHk=
+			</data>
+			<key>hash2</key>
+			<data>
+			UTGXfknquYopFEwVtmE47EzQAjqPED/kddameIsckxY=
+			</data>
+		</dict>
+		<key>Headers/g_lip.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GVpFirFnAVtvuU32roXJgUybrTY=
+			</data>
+			<key>hash2</key>
+			<data>
+			R45JMW8QCH+3F8hKUTLi3+rZMzFhC+DHRxqZj3xoj8M=
+			</data>
+		</dict>
+		<key>Headers/gmp_aux.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			L+pd6CaAtmLqjm/f+mjB1/0g6Y4=
+			</data>
+			<key>hash2</key>
+			<data>
+			9kAvn83rMdLVGA+Y/b9yrzbDROgbwZkFRvhAnStDOug=
+			</data>
+		</dict>
+		<key>Headers/lip.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			g5gIcXoPJbpovCOsXrdcsU9rjK0=
+			</data>
+			<key>hash2</key>
+			<data>
+			lHeVAs/Umpv6GmoajswSrP+4tsc5lWhavO+4AE+C6ac=
+			</data>
+		</dict>
+		<key>Headers/mach_desc.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6MXWT5X3GcVlESlkH9ljcRSuxRw=
+			</data>
+			<key>hash2</key>
+			<data>
+			P5xSVLWjJE6q27m5UgtNAZQlbGByiGK8GxhxXmY8krI=
+			</data>
+		</dict>
+		<key>Headers/new.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bzc4tRXUqr3Ttf91cBbmYaRJ0Pw=
+			</data>
+			<key>hash2</key>
+			<data>
+			hEeTyXbn1x03rP8A5NtZmU3glEJ2fA+3R0iUCM52eMc=
+			</data>
+		</dict>
+		<key>Headers/sp_arith.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q58XU9aWiUegG2WMFsefzis/G60=
+			</data>
+			<key>hash2</key>
+			<data>
+			lHjKFL1R36/D+exiC+j34doWQpFdEaVHFl2BPvr1sdw=
+			</data>
+		</dict>
+		<key>Headers/thread.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OMCGFYFTL7EefPAGtE20Z/X25X8=
+			</data>
+			<key>hash2</key>
+			<data>
+			MkZRvTp1FW1H+ez93GJc5kYACGiwl4t+7ujsNnC5bIs=
+			</data>
+		</dict>
+		<key>Headers/tools.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I350ckWRjdQvSEtAmKkuNpqvD10=
+			</data>
+			<key>hash2</key>
+			<data>
+			qGa7LxUt5mIcZfDx/HDDDNAYgIUS+0fmKSRiPLDGiGI=
+			</data>
+		</dict>
+		<key>Headers/vector.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			w4OuLjj9o2GW2C2qcfxtTHErMro=
+			</data>
+			<key>hash2</key>
+			<data>
+			i7rR/WKVSuHAP+KVDL3Sr0DJHWT2MwhwEpK0FasunKo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

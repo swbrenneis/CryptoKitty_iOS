@@ -1,5 +1,5 @@
 #include "Random.h"
-#include "coder/ByteArray.h"
+#include "ByteArray.h"
 #include <climits>
 #include <cmath>
 

@@ -1,9 +1,9 @@
 #include "DERCodec.h"
 #include "EncodingException.h"
-#include <coder/Unsigned16.h>
-#include <coder/Unsigned32.h>
-#include <coder/ByteArrayInputStream.h>
-#include <coder/ByteArrayOutputStream.h>
+#include "Unsigned16.h"
+#include "Unsigned32.h"
+#include "ByteArrayInputStream.h"
+#include "ByteArrayOutputStream.h"
 
 namespace CK {
 

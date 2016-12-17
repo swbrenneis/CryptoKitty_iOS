@@ -1,6 +1,6 @@
 #include "SHA1.h"
-#include "coder/Unsigned64.h"
-#include "coder/Unsigned32.h"
+#include "Unsigned64.h"
+#include "Unsigned32.h"
 #include <deque>
 #include <memory>
 
