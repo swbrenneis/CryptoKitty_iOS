@@ -7,9 +7,9 @@
 //
 
 #include "CCSecureRandom.h"
-#include "ByteArray.h"
-#include "Unsigned32.h"
-#include "Unsigned64.h"
+#include "coder_iOS/ByteArray.h"
+#include "coder_iOS/Unsigned32.h"
+#include "coder_iOS/Unsigned64.h"
 #include <CommonCrypto/CommonCrypto.h>
 #include <CommonCrypto/CommonRandom.h>
 

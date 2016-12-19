@@ -10,9 +10,6 @@
 		550AB39F1DF8E8EE00960773 /* CryptoKitty_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550AB3951DF8E8ED00960773 /* CryptoKitty_iOS.framework */; };
 		550AB3A41DF8E8EE00960773 /* CryptoKitty_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 550AB3A31DF8E8EE00960773 /* CryptoKitty_iOSTests.m */; };
 		550AB3A61DF8E8EE00960773 /* CryptoKitty_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 550AB3981DF8E8ED00960773 /* CryptoKitty_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		550AB3B31DF8EAEF00960773 /* BigInteger.cc in Sources */ = {isa = PBXBuildFile; fileRef = 550AB3B21DF8EAEF00960773 /* BigInteger.cc */; };
-		550AB3B41DF8EAEF00960773 /* BigInteger.cc in Sources */ = {isa = PBXBuildFile; fileRef = 550AB3B21DF8EAEF00960773 /* BigInteger.cc */; };
-		550AB3B61DF8EB1E00960773 /* BigInteger.h in Headers */ = {isa = PBXBuildFile; fileRef = 550AB3B51DF8EB1E00960773 /* BigInteger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		550AB3BD1DF8ED1500960773 /* Random.h in Headers */ = {isa = PBXBuildFile; fileRef = 550AB3BC1DF8ED1500960773 /* Random.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		550AB3C61DF8F28000960773 /* BadParameterException.h in Headers */ = {isa = PBXBuildFile; fileRef = 550AB3C41DF8F28000960773 /* BadParameterException.h */; };
 		550AB4281DFA685B00960773 /* DHKeyExchange.h in Headers */ = {isa = PBXBuildFile; fileRef = 550AB41F1DFA685B00960773 /* DHKeyExchange.h */; };
@@ -28,7 +25,7 @@
 		550AB43C1DFA68D400960773 /* RSAKeyPairGenerator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 550AB4341DFA68D400960773 /* RSAKeyPairGenerator.cc */; };
 		550AB4401DFA68D400960773 /* RSAPublicKey.cc in Sources */ = {isa = PBXBuildFile; fileRef = 550AB4381DFA68D400960773 /* RSAPublicKey.cc */; };
 		550AB4421DFA6AD300960773 /* SecureRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 550AB4411DFA6AD300960773 /* SecureRandom.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		550AB4481DFA6B3300960773 /* DecryptionException.h in Headers */ = {isa = PBXBuildFile; fileRef = 550AB4471DFA6B3300960773 /* DecryptionException.h */; };
+		550AB4481DFA6B3300960773 /* DecryptionException.h in Headers */ = {isa = PBXBuildFile; fileRef = 550AB4471DFA6B3300960773 /* DecryptionException.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		550AB44F1DFA6C8A00960773 /* CCSecureRandom.cc in Sources */ = {isa = PBXBuildFile; fileRef = 550AB44D1DFA6C8A00960773 /* CCSecureRandom.cc */; };
 		550AB4501DFA6C8A00960773 /* CCSecureRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 550AB44E1DFA6C8A00960773 /* CCSecureRandom.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		550AB4521DFA6EBC00960773 /* Random.cc in Sources */ = {isa = PBXBuildFile; fileRef = 550AB4511DFA6EBC00960773 /* Random.cc */; };
@@ -43,6 +40,29 @@
 		550AB4661DFB3D5500960773 /* SHA256.cc in Sources */ = {isa = PBXBuildFile; fileRef = 550AB4611DFB3D5500960773 /* SHA256.cc */; };
 		550AB4671DFB3D5500960773 /* SHA384.cc in Sources */ = {isa = PBXBuildFile; fileRef = 550AB4621DFB3D5500960773 /* SHA384.cc */; };
 		550AB4681DFB3D5500960773 /* SHA512.cc in Sources */ = {isa = PBXBuildFile; fileRef = 550AB4631DFB3D5500960773 /* SHA512.cc */; };
+		550ED8E51E0634D300D7D64F /* RSACodec.h in Headers */ = {isa = PBXBuildFile; fileRef = 550ED8E41E0634D300D7D64F /* RSACodec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		550ED8E71E0638CE00D7D64F /* RSACodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 550ED8E61E0638CE00D7D64F /* RSACodec.cpp */; };
+		550ED8E91E063AB500D7D64F /* OAEPrsaes.cc in Sources */ = {isa = PBXBuildFile; fileRef = 550ED8E81E063AB500D7D64F /* OAEPrsaes.cc */; };
+		550ED8EB1E063B0900D7D64F /* OAEPrsaes.h in Headers */ = {isa = PBXBuildFile; fileRef = 550ED8EA1E063B0900D7D64F /* OAEPrsaes.h */; };
+		550ED8ED1E063B3400D7D64F /* RSA.h in Headers */ = {isa = PBXBuildFile; fileRef = 550ED8EC1E063B3400D7D64F /* RSA.h */; };
+		550ED8EF1E063BA100D7D64F /* PSSmgf1.h in Headers */ = {isa = PBXBuildFile; fileRef = 550ED8EE1E063BA100D7D64F /* PSSmgf1.h */; };
+		550ED8F11E063BD100D7D64F /* IllegalOperationException.h in Headers */ = {isa = PBXBuildFile; fileRef = 550ED8F01E063BD100D7D64F /* IllegalOperationException.h */; };
+		550ED8F91E0645F500D7D64F /* PSSmgf1.cc in Sources */ = {isa = PBXBuildFile; fileRef = 550ED8F81E0645F500D7D64F /* PSSmgf1.cc */; };
+		550ED8FB1E06461E00D7D64F /* RSA.cc in Sources */ = {isa = PBXBuildFile; fileRef = 550ED8FA1E06461E00D7D64F /* RSA.cc */; };
+		550ED8FD1E06465000D7D64F /* SignatureException.h in Headers */ = {isa = PBXBuildFile; fileRef = 550ED8FC1E06465000D7D64F /* SignatureException.h */; };
+		550ED90F1E07070A00D7D64F /* BigInteger.h in Headers */ = {isa = PBXBuildFile; fileRef = 550ED90E1E07070A00D7D64F /* BigInteger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		550ED9111E07072900D7D64F /* BigInteger.cc in Sources */ = {isa = PBXBuildFile; fileRef = 550ED9101E07072900D7D64F /* BigInteger.cc */; };
+		550ED9311E0775EF00D7D64F /* GCMCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 550ED92F1E0775EF00D7D64F /* GCMCodec.cpp */; };
+		550ED9321E0775EF00D7D64F /* GCMCodec.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 550ED9301E0775EF00D7D64F /* GCMCodec.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		550ED9351E07784800D7D64F /* AES.h in Headers */ = {isa = PBXBuildFile; fileRef = 550ED9331E07784800D7D64F /* AES.h */; };
+		550ED9361E07784800D7D64F /* BlockCipher.h in Headers */ = {isa = PBXBuildFile; fileRef = 550ED9341E07784800D7D64F /* BlockCipher.h */; };
+		550ED9381E07786B00D7D64F /* AES.cc in Sources */ = {isa = PBXBuildFile; fileRef = 550ED9371E07786B00D7D64F /* AES.cc */; };
+		550ED9901E07823A00D7D64F /* AEADCipherMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 550ED98D1E07823A00D7D64F /* AEADCipherMode.h */; };
+		550ED9911E07823A00D7D64F /* BlockCipherMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 550ED98E1E07823A00D7D64F /* BlockCipherMode.h */; };
+		550ED9921E07823A00D7D64F /* GCM.h in Headers */ = {isa = PBXBuildFile; fileRef = 550ED98F1E07823A00D7D64F /* GCM.h */; };
+		550ED9941E07828D00D7D64F /* GCM.cc in Sources */ = {isa = PBXBuildFile; fileRef = 550ED9931E07828D00D7D64F /* GCM.cc */; };
+		550ED9961E0782D100D7D64F /* AuthenticationException.h in Headers */ = {isa = PBXBuildFile; fileRef = 550ED9951E0782D100D7D64F /* AuthenticationException.h */; };
+		550ED99A1E078E0900D7D64F /* coder_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550ED9991E078E0900D7D64F /* coder_iOS.framework */; };
 		552DA06A1E04697A001113C7 /* RSAPrivateKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 552DA0681E04697A001113C7 /* RSAPrivateKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		552DA06B1E04697A001113C7 /* RSAPrivateModKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 552DA0691E04697A001113C7 /* RSAPrivateModKey.h */; };
 		552DA06F1E0469EC001113C7 /* RSAPrivateCrtKey.cc in Sources */ = {isa = PBXBuildFile; fileRef = 552DA06C1E0469EC001113C7 /* RSAPrivateCrtKey.cc */; };
@@ -54,21 +74,9 @@
 		552DA07B1E046A9D001113C7 /* Base64.cc in Sources */ = {isa = PBXBuildFile; fileRef = 552DA0781E046A9D001113C7 /* Base64.cc */; };
 		552DA07C1E046A9D001113C7 /* DERCodec.cc in Sources */ = {isa = PBXBuildFile; fileRef = 552DA0791E046A9D001113C7 /* DERCodec.cc */; };
 		552DA07D1E046A9D001113C7 /* PEMCodec.cc in Sources */ = {isa = PBXBuildFile; fileRef = 552DA07A1E046A9D001113C7 /* PEMCodec.cc */; };
-		552DA07F1E046AE0001113C7 /* EncodingException.h in Headers */ = {isa = PBXBuildFile; fileRef = 552DA07E1E046AE0001113C7 /* EncodingException.h */; };
-		552DA0A51E04CFBD001113C7 /* ByteArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 552DA0A41E04CFBD001113C7 /* ByteArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		552DA0A91E04D129001113C7 /* Unsigned16.h in Headers */ = {isa = PBXBuildFile; fileRef = 552DA0A61E04D129001113C7 /* Unsigned16.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		552DA0AA1E04D129001113C7 /* Unsigned32.h in Headers */ = {isa = PBXBuildFile; fileRef = 552DA0A71E04D129001113C7 /* Unsigned32.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		552DA0AB1E04D129001113C7 /* Unsigned64.h in Headers */ = {isa = PBXBuildFile; fileRef = 552DA0A81E04D129001113C7 /* Unsigned64.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		552DA0AE1E04D16E001113C7 /* ByteArrayInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 552DA0AC1E04D16E001113C7 /* ByteArrayInputStream.h */; };
-		552DA0AF1E04D16E001113C7 /* ByteArrayOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 552DA0AD1E04D16E001113C7 /* ByteArrayOutputStream.h */; };
-		552DA0B11E04D19C001113C7 /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 552DA0B01E04D19C001113C7 /* Constants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		552DA07F1E046AE0001113C7 /* EncodingException.h in Headers */ = {isa = PBXBuildFile; fileRef = 552DA07E1E046AE0001113C7 /* EncodingException.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		552DA0BB1E04D322001113C7 /* NTL_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552DA0BA1E04D322001113C7 /* NTL_iOS.framework */; };
-		552DA0C31E04D44F001113C7 /* ByteArray.cc in Sources */ = {isa = PBXBuildFile; fileRef = 552DA0C21E04D44F001113C7 /* ByteArray.cc */; };
-		552DA0C71E04D46F001113C7 /* Unsigned16.cc in Sources */ = {isa = PBXBuildFile; fileRef = 552DA0C41E04D46F001113C7 /* Unsigned16.cc */; };
-		552DA0C81E04D46F001113C7 /* Unsigned32.cc in Sources */ = {isa = PBXBuildFile; fileRef = 552DA0C51E04D46F001113C7 /* Unsigned32.cc */; };
-		552DA0C91E04D46F001113C7 /* Unsigned64.cc in Sources */ = {isa = PBXBuildFile; fileRef = 552DA0C61E04D46F001113C7 /* Unsigned64.cc */; };
-		552DA0CC1E04D71D001113C7 /* CoderException.h in Headers */ = {isa = PBXBuildFile; fileRef = 552DA0CB1E04D71D001113C7 /* CoderException.h */; };
-		552DA0CE1E04D754001113C7 /* Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = 552DA0CD1E04D754001113C7 /* Exception.h */; };
+		552DA0CE1E04D754001113C7 /* Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = 552DA0CD1E04D754001113C7 /* Exception.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,8 +96,6 @@
 		550AB39E1DF8E8EE00960773 /* CryptoKitty_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoKitty_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		550AB3A31DF8E8EE00960773 /* CryptoKitty_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptoKitty_iOSTests.m; sourceTree = "<group>"; };
 		550AB3A51DF8E8EE00960773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		550AB3B21DF8EAEF00960773 /* BigInteger.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BigInteger.cc; sourceTree = "<group>"; };
-		550AB3B51DF8EB1E00960773 /* BigInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigInteger.h; sourceTree = "<group>"; };
 		550AB3BC1DF8ED1500960773 /* Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Random.h; sourceTree = "<group>"; };
 		550AB3C41DF8F28000960773 /* BadParameterException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadParameterException.h; sourceTree = "<group>"; };
 		550AB41F1DFA685B00960773 /* DHKeyExchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHKeyExchange.h; sourceTree = "<group>"; };
@@ -120,6 +126,29 @@
 		550AB4611DFB3D5500960773 /* SHA256.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SHA256.cc; sourceTree = "<group>"; };
 		550AB4621DFB3D5500960773 /* SHA384.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SHA384.cc; sourceTree = "<group>"; };
 		550AB4631DFB3D5500960773 /* SHA512.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SHA512.cc; sourceTree = "<group>"; };
+		550ED8E41E0634D300D7D64F /* RSACodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSACodec.h; sourceTree = "<group>"; };
+		550ED8E61E0638CE00D7D64F /* RSACodec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RSACodec.cpp; sourceTree = "<group>"; };
+		550ED8E81E063AB500D7D64F /* OAEPrsaes.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OAEPrsaes.cc; sourceTree = "<group>"; };
+		550ED8EA1E063B0900D7D64F /* OAEPrsaes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAEPrsaes.h; sourceTree = "<group>"; };
+		550ED8EC1E063B3400D7D64F /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
+		550ED8EE1E063BA100D7D64F /* PSSmgf1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSSmgf1.h; sourceTree = "<group>"; };
+		550ED8F01E063BD100D7D64F /* IllegalOperationException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IllegalOperationException.h; sourceTree = "<group>"; };
+		550ED8F81E0645F500D7D64F /* PSSmgf1.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PSSmgf1.cc; sourceTree = "<group>"; };
+		550ED8FA1E06461E00D7D64F /* RSA.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RSA.cc; sourceTree = "<group>"; };
+		550ED8FC1E06465000D7D64F /* SignatureException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignatureException.h; sourceTree = "<group>"; };
+		550ED90E1E07070A00D7D64F /* BigInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigInteger.h; sourceTree = "<group>"; };
+		550ED9101E07072900D7D64F /* BigInteger.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BigInteger.cc; sourceTree = "<group>"; };
+		550ED92F1E0775EF00D7D64F /* GCMCodec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GCMCodec.cpp; sourceTree = "<group>"; };
+		550ED9301E0775EF00D7D64F /* GCMCodec.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GCMCodec.hpp; sourceTree = "<group>"; };
+		550ED9331E07784800D7D64F /* AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AES.h; sourceTree = "<group>"; };
+		550ED9341E07784800D7D64F /* BlockCipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockCipher.h; sourceTree = "<group>"; };
+		550ED9371E07786B00D7D64F /* AES.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AES.cc; sourceTree = "<group>"; };
+		550ED98D1E07823A00D7D64F /* AEADCipherMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEADCipherMode.h; sourceTree = "<group>"; };
+		550ED98E1E07823A00D7D64F /* BlockCipherMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockCipherMode.h; sourceTree = "<group>"; };
+		550ED98F1E07823A00D7D64F /* GCM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCM.h; sourceTree = "<group>"; };
+		550ED9931E07828D00D7D64F /* GCM.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GCM.cc; sourceTree = "<group>"; };
+		550ED9951E0782D100D7D64F /* AuthenticationException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationException.h; sourceTree = "<group>"; };
+		550ED9991E078E0900D7D64F /* coder_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = coder_iOS.framework; sourceTree = "<group>"; };
 		552DA0681E04697A001113C7 /* RSAPrivateKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAPrivateKey.h; sourceTree = "<group>"; };
 		552DA0691E04697A001113C7 /* RSAPrivateModKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAPrivateModKey.h; sourceTree = "<group>"; };
 		552DA06C1E0469EC001113C7 /* RSAPrivateCrtKey.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RSAPrivateCrtKey.cc; sourceTree = "<group>"; };
@@ -132,19 +161,7 @@
 		552DA0791E046A9D001113C7 /* DERCodec.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DERCodec.cc; sourceTree = "<group>"; };
 		552DA07A1E046A9D001113C7 /* PEMCodec.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PEMCodec.cc; sourceTree = "<group>"; };
 		552DA07E1E046AE0001113C7 /* EncodingException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncodingException.h; sourceTree = "<group>"; };
-		552DA0A41E04CFBD001113C7 /* ByteArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByteArray.h; sourceTree = "<group>"; };
-		552DA0A61E04D129001113C7 /* Unsigned16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unsigned16.h; sourceTree = "<group>"; };
-		552DA0A71E04D129001113C7 /* Unsigned32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unsigned32.h; sourceTree = "<group>"; };
-		552DA0A81E04D129001113C7 /* Unsigned64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unsigned64.h; sourceTree = "<group>"; };
-		552DA0AC1E04D16E001113C7 /* ByteArrayInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByteArrayInputStream.h; sourceTree = "<group>"; };
-		552DA0AD1E04D16E001113C7 /* ByteArrayOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ByteArrayOutputStream.h; sourceTree = "<group>"; };
-		552DA0B01E04D19C001113C7 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		552DA0BA1E04D322001113C7 /* NTL_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NTL_iOS.framework; sourceTree = "<group>"; };
-		552DA0C21E04D44F001113C7 /* ByteArray.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ByteArray.cc; sourceTree = "<group>"; };
-		552DA0C41E04D46F001113C7 /* Unsigned16.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Unsigned16.cc; sourceTree = "<group>"; };
-		552DA0C51E04D46F001113C7 /* Unsigned32.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Unsigned32.cc; sourceTree = "<group>"; };
-		552DA0C61E04D46F001113C7 /* Unsigned64.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Unsigned64.cc; sourceTree = "<group>"; };
-		552DA0CB1E04D71D001113C7 /* CoderException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoderException.h; sourceTree = "<group>"; };
 		552DA0CD1E04D754001113C7 /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,6 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				550ED99A1E078E0900D7D64F /* coder_iOS.framework in Frameworks */,
 				552DA0BB1E04D322001113C7 /* NTL_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,19 +207,19 @@
 		550AB3971DF8E8ED00960773 /* CryptoKitty_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				550ED98D1E07823A00D7D64F /* AEADCipherMode.h */,
+				550ED9331E07784800D7D64F /* AES.h */,
+				550ED9371E07786B00D7D64F /* AES.cc */,
+				550ED9951E0782D100D7D64F /* AuthenticationException.h */,
 				550AB3C41DF8F28000960773 /* BadParameterException.h */,
+				550ED9341E07784800D7D64F /* BlockCipher.h */,
+				550ED98E1E07823A00D7D64F /* BlockCipherMode.h */,
 				552DA0781E046A9D001113C7 /* Base64.cc */,
 				552DA0721E046A4F001113C7 /* Base64.h */,
-				550AB3B21DF8EAEF00960773 /* BigInteger.cc */,
-				550AB3B51DF8EB1E00960773 /* BigInteger.h */,
-				552DA0C21E04D44F001113C7 /* ByteArray.cc */,
-				552DA0A41E04CFBD001113C7 /* ByteArray.h */,
-				552DA0AC1E04D16E001113C7 /* ByteArrayInputStream.h */,
-				552DA0AD1E04D16E001113C7 /* ByteArrayOutputStream.h */,
+				550ED9101E07072900D7D64F /* BigInteger.cc */,
+				550ED90E1E07070A00D7D64F /* BigInteger.h */,
 				550AB44D1DFA6C8A00960773 /* CCSecureRandom.cc */,
 				550AB44E1DFA6C8A00960773 /* CCSecureRandom.h */,
-				552DA0CB1E04D71D001113C7 /* CoderException.h */,
-				552DA0B01E04D19C001113C7 /* Constants.h */,
 				550AB3981DF8E8ED00960773 /* CryptoKitty_iOS.h */,
 				550AB4471DFA6B3300960773 /* DecryptionException.h */,
 				552DA0791E046A9D001113C7 /* DERCodec.cc */,
@@ -213,15 +231,28 @@
 				550AB4541DFB3CE300960773 /* DigestBase.h */,
 				552DA07E1E046AE0001113C7 /* EncodingException.h */,
 				552DA0CD1E04D754001113C7 /* Exception.h */,
+				550ED9931E07828D00D7D64F /* GCM.cc */,
+				550ED98F1E07823A00D7D64F /* GCM.h */,
+				550ED92F1E0775EF00D7D64F /* GCMCodec.cpp */,
+				550ED9301E0775EF00D7D64F /* GCMCodec.hpp */,
+				550ED8F01E063BD100D7D64F /* IllegalOperationException.h */,
 				550AB4201DFA685B00960773 /* KeyPair.h */,
+				550ED8EA1E063B0900D7D64F /* OAEPrsaes.h */,
+				550ED8E81E063AB500D7D64F /* OAEPrsaes.cc */,
 				552DA07A1E046A9D001113C7 /* PEMCodec.cc */,
 				552DA0741E046A4F001113C7 /* PEMCodec.h */,
 				550AB4321DFA68D400960773 /* PrivateKey.cc */,
 				550AB4211DFA685B00960773 /* PrivateKey.h */,
+				550ED8EE1E063BA100D7D64F /* PSSmgf1.h */,
+				550ED8F81E0645F500D7D64F /* PSSmgf1.cc */,
 				550AB4331DFA68D400960773 /* PublicKey.cc */,
 				550AB4221DFA685B00960773 /* PublicKey.h */,
 				550AB4511DFA6EBC00960773 /* Random.cc */,
 				550AB3BC1DF8ED1500960773 /* Random.h */,
+				550ED8EC1E063B3400D7D64F /* RSA.h */,
+				550ED8FA1E06461E00D7D64F /* RSA.cc */,
+				550ED8E41E0634D300D7D64F /* RSACodec.h */,
+				550ED8E61E0638CE00D7D64F /* RSACodec.cpp */,
 				550AB4341DFA68D400960773 /* RSAKeyPairGenerator.cc */,
 				550AB4231DFA685B00960773 /* RSAKeyPairGenerator.h */,
 				552DA06C1E0469EC001113C7 /* RSAPrivateCrtKey.cc */,
@@ -233,6 +264,7 @@
 				550AB4381DFA68D400960773 /* RSAPublicKey.cc */,
 				550AB4271DFA685B00960773 /* RSAPublicKey.h */,
 				550AB4411DFA6AD300960773 /* SecureRandom.h */,
+				550ED8FC1E06465000D7D64F /* SignatureException.h */,
 				550AB4601DFB3D5500960773 /* SHA1.cc */,
 				550AB4551DFB3CE300960773 /* SHA1.h */,
 				550AB4611DFB3D5500960773 /* SHA256.cc */,
@@ -241,13 +273,8 @@
 				550AB4571DFB3CE300960773 /* SHA384.h */,
 				550AB4631DFB3D5500960773 /* SHA512.cc */,
 				550AB4581DFB3CE300960773 /* SHA512.h */,
-				552DA0C41E04D46F001113C7 /* Unsigned16.cc */,
-				552DA0A61E04D129001113C7 /* Unsigned16.h */,
-				552DA0C51E04D46F001113C7 /* Unsigned32.cc */,
-				552DA0A71E04D129001113C7 /* Unsigned32.h */,
-				552DA0C61E04D46F001113C7 /* Unsigned64.cc */,
-				552DA0A81E04D129001113C7 /* Unsigned64.h */,
 				550AB3991DF8E8ED00960773 /* Info.plist */,
+				550ED9991E078E0900D7D64F /* coder_iOS.framework */,
 				552DA0BA1E04D322001113C7 /* NTL_iOS.framework */,
 			);
 			path = CryptoKitty_iOS;
@@ -269,40 +296,45 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				550AB3B61DF8EB1E00960773 /* BigInteger.h in Headers */,
+				550ED90F1E07070A00D7D64F /* BigInteger.h in Headers */,
 				550AB4501DFA6C8A00960773 /* CCSecureRandom.h in Headers */,
 				550AB3A61DF8E8EE00960773 /* CryptoKitty_iOS.h in Headers */,
+				550AB4481DFA6B3300960773 /* DecryptionException.h in Headers */,
 				550AB4591DFB3CE300960773 /* Digest.h in Headers */,
+				550ED8FD1E06465000D7D64F /* SignatureException.h in Headers */,
+				550ED9961E0782D100D7D64F /* AuthenticationException.h in Headers */,
 				550AB45A1DFB3CE300960773 /* DigestBase.h in Headers */,
+				550ED9321E0775EF00D7D64F /* GCMCodec.hpp in Headers */,
+				552DA07F1E046AE0001113C7 /* EncodingException.h in Headers */,
+				550ED9911E07823A00D7D64F /* BlockCipherMode.h in Headers */,
+				552DA0CE1E04D754001113C7 /* Exception.h in Headers */,
 				550AB4291DFA685B00960773 /* KeyPair.h in Headers */,
 				552DA0771E046A4F001113C7 /* PEMCodec.h in Headers */,
+				550ED9921E07823A00D7D64F /* GCM.h in Headers */,
 				550AB42A1DFA685B00960773 /* PrivateKey.h in Headers */,
-				552DA0CC1E04D71D001113C7 /* CoderException.h in Headers */,
 				550AB42B1DFA685B00960773 /* PublicKey.h in Headers */,
 				550AB3BD1DF8ED1500960773 /* Random.h in Headers */,
-				550AB42C1DFA685B00960773 /* RSAKeyPairGenerator.h in Headers */,
-				552DA0CE1E04D754001113C7 /* Exception.h in Headers */,
-				552DA0A91E04D129001113C7 /* Unsigned16.h in Headers */,
-				552DA0AB1E04D129001113C7 /* Unsigned64.h in Headers */,
-				552DA0B11E04D19C001113C7 /* Constants.h in Headers */,
-				552DA0A51E04CFBD001113C7 /* ByteArray.h in Headers */,
-				552DA0AA1E04D129001113C7 /* Unsigned32.h in Headers */,
 				552DA06A1E04697A001113C7 /* RSAPrivateKey.h in Headers */,
-				550AB4301DFA685B00960773 /* RSAPublicKey.h in Headers */,
 				550AB4421DFA6AD300960773 /* SecureRandom.h in Headers */,
+				550AB4301DFA685B00960773 /* RSAPublicKey.h in Headers */,
+				550ED8E51E0634D300D7D64F /* RSACodec.h in Headers */,
 				550AB45B1DFB3CE300960773 /* SHA1.h in Headers */,
-				552DA0751E046A4F001113C7 /* Base64.h in Headers */,
-				550AB45D1DFB3CE300960773 /* SHA384.h in Headers */,
-				552DA0761E046A4F001113C7 /* DERCodec.h in Headers */,
+				550ED9901E07823A00D7D64F /* AEADCipherMode.h in Headers */,
 				550AB45C1DFB3CE300960773 /* SHA256.h in Headers */,
+				550AB45D1DFB3CE300960773 /* SHA384.h in Headers */,
+				550ED9351E07784800D7D64F /* AES.h in Headers */,
 				550AB45E1DFB3CE300960773 /* SHA512.h in Headers */,
-				552DA0AF1E04D16E001113C7 /* ByteArrayOutputStream.h in Headers */,
-				552DA07F1E046AE0001113C7 /* EncodingException.h in Headers */,
+				550AB42C1DFA685B00960773 /* RSAKeyPairGenerator.h in Headers */,
+				550ED8EF1E063BA100D7D64F /* PSSmgf1.h in Headers */,
+				550ED8EB1E063B0900D7D64F /* OAEPrsaes.h in Headers */,
+				552DA0751E046A4F001113C7 /* Base64.h in Headers */,
+				552DA0761E046A4F001113C7 /* DERCodec.h in Headers */,
+				550ED8F11E063BD100D7D64F /* IllegalOperationException.h in Headers */,
+				550ED8ED1E063B3400D7D64F /* RSA.h in Headers */,
 				550AB3C61DF8F28000960773 /* BadParameterException.h in Headers */,
+				550ED9361E07784800D7D64F /* BlockCipher.h in Headers */,
 				550AB4281DFA685B00960773 /* DHKeyExchange.h in Headers */,
-				552DA0AE1E04D16E001113C7 /* ByteArrayInputStream.h in Headers */,
 				552DA06B1E04697A001113C7 /* RSAPrivateModKey.h in Headers */,
-				550AB4481DFA6B3300960773 /* DecryptionException.h in Headers */,
 				550AB42D1DFA685B00960773 /* RSAPrivateCrtKey.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,27 +437,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				550AB4681DFB3D5500960773 /* SHA512.cc in Sources */,
-				552DA0C91E04D46F001113C7 /* Unsigned64.cc in Sources */,
+				550ED8FB1E06461E00D7D64F /* RSA.cc in Sources */,
 				552DA07B1E046A9D001113C7 /* Base64.cc in Sources */,
-				552DA0C71E04D46F001113C7 /* Unsigned16.cc in Sources */,
+				550ED8E91E063AB500D7D64F /* OAEPrsaes.cc in Sources */,
+				550AB4681DFB3D5500960773 /* SHA512.cc in Sources */,
 				552DA0711E0469EC001113C7 /* RSAPrivateModKey.cc in Sources */,
 				550AB4401DFA68D400960773 /* RSAPublicKey.cc in Sources */,
-				552DA0C81E04D46F001113C7 /* Unsigned32.cc in Sources */,
 				552DA07C1E046A9D001113C7 /* DERCodec.cc in Sources */,
+				550ED9111E07072900D7D64F /* BigInteger.cc in Sources */,
 				550AB4521DFA6EBC00960773 /* Random.cc in Sources */,
+				550ED8F91E0645F500D7D64F /* PSSmgf1.cc in Sources */,
 				550AB43B1DFA68D400960773 /* PublicKey.cc in Sources */,
-				552DA0C31E04D44F001113C7 /* ByteArray.cc in Sources */,
 				550AB4651DFB3D5500960773 /* SHA1.cc in Sources */,
+				550ED8E71E0638CE00D7D64F /* RSACodec.cpp in Sources */,
+				550ED9941E07828D00D7D64F /* GCM.cc in Sources */,
+				550ED9381E07786B00D7D64F /* AES.cc in Sources */,
 				550AB4661DFB3D5500960773 /* SHA256.cc in Sources */,
 				552DA07D1E046A9D001113C7 /* PEMCodec.cc in Sources */,
 				552DA06F1E0469EC001113C7 /* RSAPrivateCrtKey.cc in Sources */,
 				550AB4391DFA68D400960773 /* DHKeyExchange.cc in Sources */,
 				550AB4671DFB3D5500960773 /* SHA384.cc in Sources */,
-				550AB3B31DF8EAEF00960773 /* BigInteger.cc in Sources */,
 				550AB4641DFB3D5500960773 /* DigestBase.cc in Sources */,
 				552DA0701E0469EC001113C7 /* RSAPrivateKey.cc in Sources */,
 				550AB43A1DFA68D400960773 /* PrivateKey.cc in Sources */,
+				550ED9311E0775EF00D7D64F /* GCMCodec.cpp in Sources */,
 				550AB43C1DFA68D400960773 /* RSAKeyPairGenerator.cc in Sources */,
 				550AB44F1DFA6C8A00960773 /* CCSecureRandom.cc in Sources */,
 			);
@@ -436,7 +471,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				550AB3A41DF8E8EE00960773 /* CryptoKitty_iOSTests.m in Sources */,
-				550AB3B41DF8EAEF00960773 /* BigInteger.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,10 +1,11 @@
 #include "BigInteger.h"
 #include "Random.h"
 #include "BadParameterException.h"
+#include "coder_iOS/ByteArray.h"
 #include <algorithm>
 #include <climits>
 #include <cmath>
-#include <NTL_iOS/ZZ.h>
+#include "NTL_iOS/ZZ.h"
 
 namespace CK {
 
@@ -33,8 +34,7 @@ void makePrime(NTL::ZZ& n, bool sgPrime) {
             n += 2;
         }
     }
-    // I don't think Shoup knows that there is a bool type
-    // in C++.
+    // Not sure why ProbPrime returns an integer.
     provisional = false;
     while (!provisional) {
         provisional = NTL::ProbPrime(n, 64) == 1;
@@ -110,7 +110,6 @@ BigInteger::BigInteger(int bits, bool sgPrime, Random& rnd) {
     for (unsigned n = 1; n < pBytes.getLength(); ++n) {
         work = (work * 256) + pBytes[n];
     }
-    std::cout << "work = " << work << std::endl;
 
     // Make sure it's positive.
     if (work < 0) {
@@ -216,12 +215,12 @@ BigInteger BigInteger::And(const BigInteger& logical) const {
  */
 int BigInteger::bitLength() const {
 
-    return static_cast<int>(NTL::NumBits(*number));
+    return NTL::NumBits(*number);
 
 }
 
 /*
- * Returns the number of bits in the encoded representation of this integer.
+ * Returns the number of bit in the encoded representation of this integer.
  */
 int BigInteger::bitSize() const {
 
@@ -239,9 +238,8 @@ void BigInteger::decode(const coder::ByteArray& bytes) {
     number = new NTL::ZZ(0L);
     int bl = bytes.getLength(); // have to do this so the indexes
                                 // don't wrap.
-    
-    // Start at index = 1. First byte is the sign byte. Always zero.
-    for (int n = 1; n < bl; ++n) {
+
+    for (int n = 0; n < bl; ++n) {
         *number = *number << 8;
         *number |= bytes[n];
     }
@@ -294,7 +292,11 @@ coder::ByteArray BigInteger::getEncoded() const {
         work = work / 256;
         index --;
     }
-    result.push(0);
+    // If the MSB is set in the lowest octet, we need to add
+    // a sign byte so that the value is always positive.
+    if ((result[0] & 0x80) != 0) {
+        result.push(0);
+    }
     return result;
 
 }
@@ -310,6 +312,15 @@ BigInteger BigInteger::invert() const {
         NTL::SetBit(mask, i);
     }
     return BigInteger(new NTL::ZZ(*number ^ mask));
+
+}
+
+/*
+ * Returns true if the integer is probably prime.
+ */
+bool BigInteger::isProbablePrime() const {
+
+    return NTL::ProbPrime(*number, 64) == 1;
 
 }
 
@@ -513,6 +524,15 @@ BigInteger BigInteger::subtract(const BigInteger& subtractor) const {
 bool BigInteger::testBit(int bitnum) const {
 
     return NTL::bit(*number, bitnum) == 1;
+
+}
+
+/*
+ * Returns a long (64 bit) representation of this integer.
+ */
+long BigInteger::toLong() {
+
+    return NTL::to_long(*number);
 
 }
 

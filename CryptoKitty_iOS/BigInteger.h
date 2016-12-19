@@ -1,9 +1,12 @@
 #ifndef BIGINTEGER_H_INCLUDED
 #define BIGINTEGER_H_INCLUDED
 
-#include "ByteArray.h"
 #include <deque>
 #include <iostream>
+
+namespace coder {
+    class ByteArray;
+}
 
 namespace NTL {
     class ZZ;
@@ -16,6 +19,9 @@ class Random;
 /*
  * This is a delegate class for Victor Shoup's
  * Number Theory Library ZZ class.
+ *
+ * It is used as a backing class for the CryptoKitty Java implementation.
+ *
  */
 class BigInteger {
 
@@ -34,7 +40,7 @@ class BigInteger {
         // Constructs a BigInteger object with a value of 0 
         BigInteger();
         BigInteger(const BigInteger& other);
-        // Constructs a BigInteger object from a BigEndian encoded array
+        // Constructs a BigInteger from a bigendian encoded byte array.
         BigInteger(const coder::ByteArray& bytes);
         // Constructs a BigInteger object with initial value
         BigInteger(long intial);
@@ -66,6 +72,8 @@ class BigInteger {
         int bitLength() const;
         // Returns the total number of bits
         int bitSize() const;
+        // Decode a byte array
+        void decode(const coder::ByteArray& bytes);
         // Returns a BigInteger equal to this divided by divisor.
         BigInteger divide(const BigInteger& divisor) const;
         // Returns true if this = other.
@@ -76,6 +84,8 @@ class BigInteger {
         coder::ByteArray getEncoded() const;
         // Returns a BigInteger that is the bitwise inversion of this.
         BigInteger invert() const;
+        // Returns true if the integer is a probable prime.
+        bool isProbablePrime() const;
         // Returns a BigInteger equal to this shifted left count times.
         BigInteger leftShift(long count) const;
         // Returns true if this < other.
@@ -102,16 +112,14 @@ class BigInteger {
         BigInteger subtract(const BigInteger& subtractor) const;
         // Returns true if the specified bit is set.
         bool testBit(int bitnum) const;
+        // Returns the long representation of this integer. May be truncated.
+        long toLong();
         // Returns a BigInteger that is the bitwise exclusive or of this
         // and logical.
         BigInteger Xor(const BigInteger& logical) const;
 
     public:
         void out(std::ostream& o) const;
-
-    private:
-        // Decode a byte array
-        void decode(const coder::ByteArray& bytes);
 
     private:
         NTL::ZZ *number;

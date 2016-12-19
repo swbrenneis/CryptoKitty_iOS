@@ -1,6 +1,6 @@
 #include "SHA256.h"
-#include "Unsigned32.h"
-#include "Unsigned64.h"
+#include "coder_iOS/Unsigned32.h"
+#include "coder_iOS/Unsigned64.h"
 #include <string.h>
 #include <climits>
 

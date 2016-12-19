@@ -1,5 +1,5 @@
 #include "Random.h"
-#include "ByteArray.h"
+#include "coder_iOS/ByteArray.h"
 #include <climits>
 #include <cmath>
 

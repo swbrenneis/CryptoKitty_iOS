@@ -1,9 +1,9 @@
 #include "DERCodec.h"
 #include "EncodingException.h"
-#include "Unsigned16.h"
-#include "Unsigned32.h"
-#include "ByteArrayInputStream.h"
-#include "ByteArrayOutputStream.h"
+#include "coder_iOS/Unsigned16.h"
+#include "coder_iOS/Unsigned32.h"
+#include "coder_iOS/ByteArrayInputStream.h"
+#include "coder_iOS/ByteArrayOutputStream.h"
 
 namespace CK {
 

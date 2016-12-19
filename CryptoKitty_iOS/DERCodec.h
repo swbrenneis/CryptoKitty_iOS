@@ -1,7 +1,7 @@
 #ifndef DERCODEC_H_INCLUDED
 #define DERCODEC_H_INCLUDED
 
-#include "ByteArray.h"
+#include "coder_iOS/ByteArray.h"
 
 namespace coder {
     class ByteArrayInputStream;
