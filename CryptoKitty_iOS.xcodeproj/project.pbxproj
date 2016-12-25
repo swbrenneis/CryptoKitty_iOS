@@ -62,7 +62,6 @@
 		550ED9921E07823A00D7D64F /* GCM.h in Headers */ = {isa = PBXBuildFile; fileRef = 550ED98F1E07823A00D7D64F /* GCM.h */; };
 		550ED9941E07828D00D7D64F /* GCM.cc in Sources */ = {isa = PBXBuildFile; fileRef = 550ED9931E07828D00D7D64F /* GCM.cc */; };
 		550ED9961E0782D100D7D64F /* AuthenticationException.h in Headers */ = {isa = PBXBuildFile; fileRef = 550ED9951E0782D100D7D64F /* AuthenticationException.h */; };
-		550ED99A1E078E0900D7D64F /* coder_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550ED9991E078E0900D7D64F /* coder_iOS.framework */; };
 		552DA06A1E04697A001113C7 /* RSAPrivateKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 552DA0681E04697A001113C7 /* RSAPrivateKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		552DA06B1E04697A001113C7 /* RSAPrivateModKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 552DA0691E04697A001113C7 /* RSAPrivateModKey.h */; };
 		552DA06F1E0469EC001113C7 /* RSAPrivateCrtKey.cc in Sources */ = {isa = PBXBuildFile; fileRef = 552DA06C1E0469EC001113C7 /* RSAPrivateCrtKey.cc */; };
@@ -77,6 +76,10 @@
 		552DA07F1E046AE0001113C7 /* EncodingException.h in Headers */ = {isa = PBXBuildFile; fileRef = 552DA07E1E046AE0001113C7 /* EncodingException.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		552DA0BB1E04D322001113C7 /* NTL_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552DA0BA1E04D322001113C7 /* NTL_iOS.framework */; };
 		552DA0CE1E04D754001113C7 /* Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = 552DA0CD1E04D754001113C7 /* Exception.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55D4F4A61E100E710078EEE3 /* coder_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D4F4A51E100E710078EEE3 /* coder_iOS.framework */; };
+		55D4F4AC1E1052C80078EEE3 /* HMAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D4F4AB1E1052C80078EEE3 /* HMAC.h */; };
+		55D4F4AE1E1052D90078EEE3 /* HMAC.cc in Sources */ = {isa = PBXBuildFile; fileRef = 55D4F4AD1E1052D90078EEE3 /* HMAC.cc */; };
+		55D4F4B01E1053430078EEE3 /* IllegalStateException.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D4F4AF1E1053430078EEE3 /* IllegalStateException.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,7 +151,6 @@
 		550ED98F1E07823A00D7D64F /* GCM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCM.h; sourceTree = "<group>"; };
 		550ED9931E07828D00D7D64F /* GCM.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GCM.cc; sourceTree = "<group>"; };
 		550ED9951E0782D100D7D64F /* AuthenticationException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationException.h; sourceTree = "<group>"; };
-		550ED9991E078E0900D7D64F /* coder_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = coder_iOS.framework; sourceTree = "<group>"; };
 		552DA0681E04697A001113C7 /* RSAPrivateKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAPrivateKey.h; sourceTree = "<group>"; };
 		552DA0691E04697A001113C7 /* RSAPrivateModKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAPrivateModKey.h; sourceTree = "<group>"; };
 		552DA06C1E0469EC001113C7 /* RSAPrivateCrtKey.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RSAPrivateCrtKey.cc; sourceTree = "<group>"; };
@@ -163,6 +165,10 @@
 		552DA07E1E046AE0001113C7 /* EncodingException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncodingException.h; sourceTree = "<group>"; };
 		552DA0BA1E04D322001113C7 /* NTL_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NTL_iOS.framework; sourceTree = "<group>"; };
 		552DA0CD1E04D754001113C7 /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		55D4F4A51E100E710078EEE3 /* coder_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = coder_iOS.framework; sourceTree = "<group>"; };
+		55D4F4AB1E1052C80078EEE3 /* HMAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMAC.h; sourceTree = "<group>"; };
+		55D4F4AD1E1052D90078EEE3 /* HMAC.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HMAC.cc; sourceTree = "<group>"; };
+		55D4F4AF1E1053430078EEE3 /* IllegalStateException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IllegalStateException.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,7 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				550ED99A1E078E0900D7D64F /* coder_iOS.framework in Frameworks */,
+				55D4F4A61E100E710078EEE3 /* coder_iOS.framework in Frameworks */,
 				552DA0BB1E04D322001113C7 /* NTL_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,7 +241,10 @@
 				550ED98F1E07823A00D7D64F /* GCM.h */,
 				550ED92F1E0775EF00D7D64F /* GCMCodec.cpp */,
 				550ED9301E0775EF00D7D64F /* GCMCodec.hpp */,
+				55D4F4AB1E1052C80078EEE3 /* HMAC.h */,
+				55D4F4AD1E1052D90078EEE3 /* HMAC.cc */,
 				550ED8F01E063BD100D7D64F /* IllegalOperationException.h */,
+				55D4F4AF1E1053430078EEE3 /* IllegalStateException.h */,
 				550AB4201DFA685B00960773 /* KeyPair.h */,
 				550ED8EA1E063B0900D7D64F /* OAEPrsaes.h */,
 				550ED8E81E063AB500D7D64F /* OAEPrsaes.cc */,
@@ -274,7 +283,7 @@
 				550AB4631DFB3D5500960773 /* SHA512.cc */,
 				550AB4581DFB3CE300960773 /* SHA512.h */,
 				550AB3991DF8E8ED00960773 /* Info.plist */,
-				550ED9991E078E0900D7D64F /* coder_iOS.framework */,
+				55D4F4A51E100E710078EEE3 /* coder_iOS.framework */,
 				552DA0BA1E04D322001113C7 /* NTL_iOS.framework */,
 			);
 			path = CryptoKitty_iOS;
@@ -300,6 +309,7 @@
 				550AB4501DFA6C8A00960773 /* CCSecureRandom.h in Headers */,
 				550AB3A61DF8E8EE00960773 /* CryptoKitty_iOS.h in Headers */,
 				550AB4481DFA6B3300960773 /* DecryptionException.h in Headers */,
+				55D4F4AC1E1052C80078EEE3 /* HMAC.h in Headers */,
 				550AB4591DFB3CE300960773 /* Digest.h in Headers */,
 				550ED8FD1E06465000D7D64F /* SignatureException.h in Headers */,
 				550ED9961E0782D100D7D64F /* AuthenticationException.h in Headers */,
@@ -308,6 +318,7 @@
 				552DA07F1E046AE0001113C7 /* EncodingException.h in Headers */,
 				550ED9911E07823A00D7D64F /* BlockCipherMode.h in Headers */,
 				552DA0CE1E04D754001113C7 /* Exception.h in Headers */,
+				55D4F4B01E1053430078EEE3 /* IllegalStateException.h in Headers */,
 				550AB4291DFA685B00960773 /* KeyPair.h in Headers */,
 				552DA0771E046A4F001113C7 /* PEMCodec.h in Headers */,
 				550ED9921E07823A00D7D64F /* GCM.h in Headers */,
@@ -384,7 +395,7 @@
 		550AB38C1DF8E8ED00960773 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = CryptoKitty;
 				TargetAttributes = {
 					550AB3941DF8E8ED00960773 = {
@@ -446,6 +457,7 @@
 				552DA07C1E046A9D001113C7 /* DERCodec.cc in Sources */,
 				550ED9111E07072900D7D64F /* BigInteger.cc in Sources */,
 				550AB4521DFA6EBC00960773 /* Random.cc in Sources */,
+				55D4F4AE1E1052D90078EEE3 /* HMAC.cc in Sources */,
 				550ED8F91E0645F500D7D64F /* PSSmgf1.cc in Sources */,
 				550AB43B1DFA68D400960773 /* PublicKey.cc in Sources */,
 				550AB4651DFB3D5500960773 /* SHA1.cc in Sources */,
@@ -503,6 +515,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -554,6 +567,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
