@@ -17,6 +17,7 @@ class ByteArrayOutputStream {
 
     public:
         void reset();
+        unsigned size() const { return theArray.getLength(); }
         void write(uint8_t byte);
         void write(const ByteArray& bytes);
         void write(const ByteArray& bytes, unsigned offset, unsigned length);
