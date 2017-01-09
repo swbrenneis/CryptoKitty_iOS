@@ -30,7 +30,7 @@ namespace CK {
 
     }
 
-    void RSACodec::decrypt(RSAPrivateKey& privateKey) {
+    void RSACodec::decrypt(const RSAPrivateKey& privateKey) {
 
         try {
             OAEPrsaes cipher(OAEPrsaes::sha256);
@@ -42,7 +42,7 @@ namespace CK {
 
     }
 
-    void RSACodec::encrypt(RSAPublicKey& publicKey) {
+    void RSACodec::encrypt(const RSAPublicKey& publicKey) {
 
         try {
             OAEPrsaes cipher(OAEPrsaes::sha256);

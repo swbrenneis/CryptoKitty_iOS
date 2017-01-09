@@ -25,8 +25,8 @@ namespace CK {
         ~RSACodec();
 
     public:
-        void decrypt(RSAPrivateKey& privateKey);
-        void encrypt(RSAPublicKey& publicKey);
+        void decrypt(const RSAPrivateKey& privateKey);
+        void encrypt(const RSAPublicKey& publicKey);
         const coder::ByteArray& toArray() const { return text; }
 
 

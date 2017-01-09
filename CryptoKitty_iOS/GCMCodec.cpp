@@ -33,16 +33,13 @@ void GCMCodec::decrypt(const coder::ByteArray& key, const coder::ByteArray& ad) 
 
     // The IV is the last 12 bytes of the provided text.
     coder::ByteArray ciphertext(text.range(0, text.getLength() - 12));
-    std::cout << "ciphertext = " << ciphertext.toHexString() << std::endl;
     coder::ByteArray iv(text.range(text.getLength() - 12));
 
     try {
         GCM gcm(new AES(AES::AES256), true);    // Auth tag is appended
-        std::cout << "iv = " << iv.toHexString() << std::endl;
         gcm.setIV(iv);
         gcm.setAuthenticationData(ad);
         stream = gcm.decrypt(ciphertext, key);
-        std::cout << "plaintext = " << stream.toHexString() << std::endl;
     }
     catch (BadParameterException& e) {
         throw EncodingException(e);
@@ -58,8 +55,6 @@ void GCMCodec::encrypt(const coder::ByteArray& key, const coder::ByteArray& ad) 
     coder::ByteArray iv(12, 0);
     CCSecureRandom rnd;
     rnd.nextBytes(iv);
-    std::cout << "iv = " << iv.toHexString() << std::endl;
-    std::cout << "plaintext = " << stream.toHexString() << std::endl;
 
     try {
         GCM gcm(new AES(AES::AES256), true);    // Append the auth tag.
@@ -67,7 +62,6 @@ void GCMCodec::encrypt(const coder::ByteArray& key, const coder::ByteArray& ad) 
         gcm.setAuthenticationData(ad);
         text = gcm.encrypt(stream, key);
         text.append(iv);                        // Append the IV
-        std::cout << "ciphertext = " << text.toHexString() << std::endl;
     }
     catch (BadParameterException& e) {
         throw EncodingException(e);
