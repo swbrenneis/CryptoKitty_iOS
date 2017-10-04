@@ -9,8 +9,6 @@
 #include <iostream>
 #include <cmath>
 
-namespace CK {
-
 GCM::GCM(BlockCipher *c, bool append)
 : tagSize(128),
   appendTag(append),
@@ -339,6 +337,3 @@ void GCM::setAuthTag(const coder::ByteArray& tag) {
     T = tag;
 
 }
-
-}
-

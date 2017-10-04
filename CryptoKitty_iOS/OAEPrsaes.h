@@ -4,8 +4,6 @@
 #include "RSA.h"
 #include "coder_iOS/ByteArray.h"
 
-namespace CK {
-
 class Digest;
 
 class OAEPrsaes : public RSA {
@@ -43,7 +41,5 @@ class OAEPrsaes : public RSA {
         Digest *digest;
 
 };
-
-}
 
 #endif  // OAEPRSAES_H_INCLUDED

@@ -1,19 +1,17 @@
 #ifndef ILLEGALSTATEEXCEPTION_H_INCLUDED
 #define ILLEGALSTATEEXCEPTION_H_INCLUDED
 
-#include "Exception.h"
+#include "CKException.h"
 
-namespace CK {
-
-class IllegalStateException : public Exception {
+class IllegalStateException : public CKException {
 
     protected:
         IllegalStateException() {}
 
     public:
-        IllegalStateException(const std::string& msg) : Exception(msg) {}
+        IllegalStateException(const std::string& msg) : CKException(msg) {}
         IllegalStateException(const IllegalStateException& other)
-                : Exception(other) {}
+                : CKException(other) {}
 
     private:
         IllegalStateException& operator= (const IllegalStateException& other);
@@ -22,7 +20,5 @@ class IllegalStateException : public Exception {
         ~IllegalStateException() {}
 
 };
-
-}
 
 #endif // ILLEGALSTATEEXCEPTION_H_INCLUDED

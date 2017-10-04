@@ -3,8 +3,6 @@
 
 #include "BlockCipherMode.h"
 
-namespace CK {
-
 class AEADCipherMode : public BlockCipherMode {
 
     protected:
@@ -21,7 +19,5 @@ class AEADCipherMode : public BlockCipherMode {
         virtual void setAuthenticationData(const coder::ByteArray& ad)=0;
 
 };
-
-}
 
 #endif  // AEADCIPHERMODE_H_INCLUDED

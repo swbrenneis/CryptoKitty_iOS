@@ -2,8 +2,6 @@
 #include "BadParameterException.h"
 #include "DecryptionException.h"
 
-namespace CK {
-
 RSAPrivateCrtKey::RSAPrivateCrtKey(const BigInteger& p, const BigInteger& q,
                                     const BigInteger& d, const BigInteger& e)
 : RSAPrivateKey(crt),
@@ -119,6 +117,3 @@ BigInteger RSAPrivateCrtKey::rsasp1(const BigInteger& m) const {
     return result;
 
 }
-
-}
-

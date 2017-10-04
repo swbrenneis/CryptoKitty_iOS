@@ -13,8 +13,6 @@
 #include "coder_iOS/Unsigned32.h"
 #include <sstream>
 
-namespace CK {
-
 static const std::string RSA_PUBLIC_PREAMBLE("-----BEGIN RSA PUBLIC KEY-----");
 static const std::string RSA_PUBLIC_EPILOGUE("-----END RSA PUBLIC KEY-----");
 static const std::string PUBLIC_PREAMBLE("-----BEGIN PUBLIC KEY-----");
@@ -553,6 +551,3 @@ RSAPublicKey *PEMCodec::parsePublicKey(coder::ByteArrayInputStream& key) {
     return getPublicKey(keyStream);
 
 }
-
-}
-

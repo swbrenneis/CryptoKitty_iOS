@@ -1,26 +1,16 @@
 #ifndef BIGINTEGER_H_INCLUDED
 #define BIGINTEGER_H_INCLUDED
 
-#include <deque>
+#include "gmp.h"
 #include <iostream>
 
 namespace coder {
     class ByteArray;
 }
 
-namespace NTL {
-    class ZZ;
-}
-
-namespace CK {
-
 class Random;
 
 /*
- * This is a delegate class for Victor Shoup's
- * Number Theory Library ZZ class.
- *
- * It is used as a backing class for the CryptoKitty Java implementation.
  *
  */
 class BigInteger {
@@ -42,20 +32,20 @@ class BigInteger {
         BigInteger(const BigInteger& other);
         // Constructs a BigInteger from a bigendian encoded byte array.
         BigInteger(const coder::ByteArray& bytes);
-        // Constructs a BigInteger object with initial value
-        BigInteger(long intial);
+        // Constructs a BigInteger object with initial unsigned long value
+        BigInteger(unsigned long intial);
         // Constructs a BigInteger object with a probablistic
         // prime value. If sgPrime = true, the number will be
         // a safe prime.
         BigInteger(int bits, bool sgPrime, Random& rnd);
 
     private:
-        BigInteger(NTL::ZZ *newNumber);
-        BigInteger(const NTL::ZZ& otherNumber);
+        BigInteger(mpz_t newNumber);
+        explicit BigInteger(const mpz_t otherNumber);
 
     public:
         BigInteger& operator= (const BigInteger& other);
-        BigInteger& operator= (long value);
+        BigInteger& operator= (unsigned long value);
         BigInteger& operator++ ();
         BigInteger operator++ (int i);
 
@@ -103,7 +93,7 @@ class BigInteger {
         // and logical.
         BigInteger Or(const BigInteger& logical) const;
         // Returns a BigInteger equal to this raised to the exp power.
-        BigInteger pow(long exp) const;
+        BigInteger pow(unsigned long exp) const;
         // Returns a BigInteger equal to this shifted right count times.
         BigInteger rightShift(long count) const;
         // Set a bit
@@ -113,7 +103,7 @@ class BigInteger {
         // Returns true if the specified bit is set.
         bool testBit(int bitnum) const;
         // Returns the long representation of this integer. May be truncated.
-        long toLong();
+        unsigned long toLong();
         // Returns a BigInteger that is the bitwise exclusive or of this
         // and logical.
         BigInteger Xor(const BigInteger& logical) const;
@@ -122,35 +112,33 @@ class BigInteger {
         void out(std::ostream& o) const;
 
     private:
-        NTL::ZZ *number;
+        mpz_t number;
 
         static const unsigned long long ULLONG_MSB;
 
 };
 
-}
-
 /*
  * Global operator overloads
 */
-bool operator== (const CK::BigInteger& lhs, const CK::BigInteger& rhs);
-bool operator!= (const CK::BigInteger& lhs, const CK::BigInteger& rhs);
-bool operator< (const CK::BigInteger& lhs, const CK::BigInteger& rhs);
-bool operator<= (const CK::BigInteger& lhs, const CK::BigInteger& rhs);
-bool operator> (const CK::BigInteger& lhs, const CK::BigInteger& rhs);
-bool operator>= (const CK::BigInteger& lhs, const CK::BigInteger& rhs);
-CK::BigInteger operator+ (const CK::BigInteger& lhs, const CK::BigInteger& rhs);
-CK::BigInteger operator- (const CK::BigInteger& lhs, const CK::BigInteger& rhs);
-CK::BigInteger operator- (const CK::BigInteger& lhs);
-CK::BigInteger operator* (const CK::BigInteger& lhs, const CK::BigInteger& rhs);
-CK::BigInteger operator/ (const CK::BigInteger& lhs, const CK::BigInteger& rhs);
-CK::BigInteger operator% (const CK::BigInteger& lhs, const CK::BigInteger& rhs);
-CK::BigInteger operator^ (const CK::BigInteger& lhs, const CK::BigInteger& rhs);
-CK::BigInteger operator| (const CK::BigInteger& lhs, const CK::BigInteger& rhs);
-CK::BigInteger operator& (const CK::BigInteger& lhs, const CK::BigInteger& rhs);
-CK::BigInteger operator~ (const CK::BigInteger& lhs);
-CK::BigInteger operator>> (const CK::BigInteger& lhs, long rhs);
-CK::BigInteger operator<< (const CK::BigInteger& lhs, long rhs);
-std::ostream& operator<< (std::ostream& out, const CK::BigInteger& bi);
+bool operator== (const BigInteger& lhs, const BigInteger& rhs);
+bool operator!= (const BigInteger& lhs, const BigInteger& rhs);
+bool operator< (const BigInteger& lhs, const BigInteger& rhs);
+bool operator<= (const BigInteger& lhs, const BigInteger& rhs);
+bool operator> (const BigInteger& lhs, const BigInteger& rhs);
+bool operator>= (const BigInteger& lhs, const BigInteger& rhs);
+BigInteger operator+ (const BigInteger& lhs, const BigInteger& rhs);
+BigInteger operator- (const BigInteger& lhs, const BigInteger& rhs);
+BigInteger operator- (const BigInteger& lhs);
+BigInteger operator* (const BigInteger& lhs, const BigInteger& rhs);
+BigInteger operator/ (const BigInteger& lhs, const BigInteger& rhs);
+BigInteger operator% (const BigInteger& lhs, const BigInteger& rhs);
+BigInteger operator^ (const BigInteger& lhs, const BigInteger& rhs);
+BigInteger operator| (const BigInteger& lhs, const BigInteger& rhs);
+BigInteger operator& (const BigInteger& lhs, const BigInteger& rhs);
+BigInteger operator~ (const BigInteger& lhs);
+BigInteger operator>> (const BigInteger& lhs, long rhs);
+BigInteger operator<< (const BigInteger& lhs, long rhs);
+std::ostream& operator<< (std::ostream& out, const BigInteger& bi);
 
 #endif // BIGINTEGER_H_INCLUDED

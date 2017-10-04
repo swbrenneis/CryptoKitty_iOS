@@ -4,8 +4,6 @@
 #include <deque>
 #include <memory>
 
-namespace CK {
-
 const uint32_t SHA1::H1 = 0x67452301;
 const uint32_t SHA1::H2 = 0xefcdab89;
 const uint32_t SHA1::H3 = 0x98badcfe;
@@ -240,4 +238,3 @@ uint32_t *SHA1::W(const coder::ByteArray& chunk) const {
 
 }
 
-}

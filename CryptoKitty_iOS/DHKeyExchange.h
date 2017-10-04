@@ -3,8 +3,6 @@
 
 #include "BigInteger.h"
 
-namespace CK {
-
 /*
  * Diffie-Hellman key exchange.
  */
@@ -38,7 +36,5 @@ class DHKeyExchange {
         BigInteger publicKey;   // DH public key, g^a mod p
 
 };
-
-}
 
 #endif  // DHKEYEXCHANGE_H_INCLUDED

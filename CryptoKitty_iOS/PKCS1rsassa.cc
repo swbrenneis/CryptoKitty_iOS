@@ -7,8 +7,6 @@
 #include "RSAPublicKey.h"
 #include "RSAPrivateKey.h"
 
-namespace CK {
-
 PKCS1rsassa::PKCS1rsassa(Digest *d)
 : digest(d),
   algorithmOID(d->getDER()) {
@@ -233,4 +231,3 @@ PKCS1rsassa::verify(const RSAPublicKey& K, const coder::ByteArray& M,
 
 }
 
-}

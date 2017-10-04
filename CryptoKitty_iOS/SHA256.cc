@@ -4,8 +4,6 @@
 #include <string.h>
 #include <climits>
 
-namespace CK {
-
 // Static initializers
 const uint32_t SHA256::H1 = 0x6a09e667;
 const uint32_t SHA256::H2 = 0xbb67ae85;
@@ -257,6 +255,3 @@ uint32_t SHA256::Sigma1(uint32_t x) const {
     return ror(x, 6) ^ ror(x, 11) ^ ror(x, 25);
 
 }
-
-}
-

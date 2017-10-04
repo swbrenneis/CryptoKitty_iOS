@@ -3,8 +3,6 @@
 #include <climits>
 #include <cmath>
 
-namespace CK {
-
 /*
  * For iOS, this is just a shell class. It does nothing.
  */
@@ -40,6 +38,3 @@ uint64_t Random::nextLong() {
  */
 void Random::setSeed(uint64_t newSeed) {
 }
-
-}
-

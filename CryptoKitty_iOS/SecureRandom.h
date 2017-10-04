@@ -4,8 +4,6 @@
 #include "Random.h"
 #include <string>
 
-namespace CK {
-
 class SecureRandom : public Random {
 
     protected:
@@ -15,7 +13,5 @@ class SecureRandom : public Random {
         virtual ~SecureRandom() {}
 
 };
-
-}
 
 #endif	// SECURERANDOM_H_INCLUDED

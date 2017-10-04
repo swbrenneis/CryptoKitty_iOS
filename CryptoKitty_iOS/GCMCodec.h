@@ -11,8 +11,6 @@
 
 #include "coder_iOS/ByteStreamCodec.h"
 
-namespace CK {
-
 class GCMCodec : public coder::ByteStreamCodec {
 
 public:
@@ -29,7 +27,5 @@ private:
     coder::ByteArray text;
 
 };
-
-}
 
 #endif /* GCMCodec_hpp */

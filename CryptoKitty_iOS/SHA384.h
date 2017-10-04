@@ -5,8 +5,6 @@
 
 #include <deque>
 
-namespace CK {
-        
 /*
  * SHA-384 message digest implementation.
  */
@@ -54,7 +52,5 @@ class SHA384 : public DigestBase {
         static const coder::ByteArray DER;
 
 };
-
-}
 
 #endif  // SHA384_H_INCLUDED

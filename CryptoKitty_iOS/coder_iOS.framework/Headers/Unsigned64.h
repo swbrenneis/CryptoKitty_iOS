@@ -11,8 +11,8 @@ class Unsigned64 {
     public:
         Unsigned64();
         Unsigned64(uint64_t v);
-        Unsigned64(const ByteArray& encoded);
-        Unsigned64(const ByteArray& encoded, Endian endian);
+        //Unsigned64(const ByteArray& encoded);
+        Unsigned64(const ByteArray& encoded, Endian endian = bigendian);
         Unsigned64(const Unsigned64& other);
 
         ~Unsigned64();
@@ -22,13 +22,13 @@ class Unsigned64 {
 
     public:
         // Decode a byte array in the native endian order.
-        void decode(const ByteArray& encoded);
+        //void decode(const ByteArray& encoded);
         // Decode a byte array in the specified endian order.
-        void decode(const ByteArray& encoded, Endian endian);
+        void decode(const ByteArray& encoded, Endian endian = bigendian);
         // Returns an encoded array in the native endian order.
-        const ByteArray& getEncoded();
+        //const ByteArray& getEncoded();
         // Returns an encoded array in the specified endian order.
-        const ByteArray& getEncoded(Endian endian);
+        const ByteArray& getEncoded(Endian endian = bigendian);
         // Returns an unsigned integer.
         uint64_t getValue() const;
         // Sets the unsigned value.
@@ -37,7 +37,7 @@ class Unsigned64 {
         std::string toHexString(Endian e, bool prefix = false);
 
     private:
-        void endianTest();
+        //void endianTest();
         void encode(Endian eType);
 
     private:

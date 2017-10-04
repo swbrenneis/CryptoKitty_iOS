@@ -11,25 +11,21 @@
 
 #include "SecureRandom.h"
 
-namespace CK {
+class CCSecureRandom : public SecureRandom {
+
+public:
+    CCSecureRandom();
+    ~CCSecureRandom();
     
-    class CCSecureRandom : public SecureRandom {
+private:
+    CCSecureRandom(const CCSecureRandom& other);
+    CCSecureRandom& operator =(const CCSecureRandom& other);
 
-    public:
-        CCSecureRandom();
-        ~CCSecureRandom();
-        
-    private:
-        CCSecureRandom(const CCSecureRandom& other);
-        CCSecureRandom& operator =(const CCSecureRandom& other);
+public:
+    void nextBytes(coder::ByteArray& bytes);
+    uint32_t nextInt();
+    uint64_t nextLong();
 
-    public:
-        void nextBytes(coder::ByteArray& bytes);
-        uint32_t nextInt();
-        uint64_t nextLong();
-
-    };
+};
     
-}
-
 #endif /* CCSecureRandom_hpp */

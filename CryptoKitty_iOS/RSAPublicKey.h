@@ -4,8 +4,6 @@
 #include "PublicKey.h"
 #include "BigInteger.h"
 
-namespace CK {
-
 class RSAPublicKey : public PublicKey {
 
     private:
@@ -28,7 +26,5 @@ class RSAPublicKey : public PublicKey {
         int bitLength;
 
 };
-
-}
 
 #endif  // RSAPUBLICKEY_H_INCLUDED

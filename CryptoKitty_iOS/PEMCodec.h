@@ -11,8 +11,6 @@ namespace coder {
     class ByteArrayOutputStream;
 }
 
-namespace CK {
-
 class RSAPublicKey;
 class RSAPrivateCrtKey;
 class RSAPrivateModKey;
@@ -63,8 +61,6 @@ class PEMCodec {
         DERCodec *derCodec;
 
 };
-
-}
 
 #endif // PEMCODEC_H_INCLUDED
 

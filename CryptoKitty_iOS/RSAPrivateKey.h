@@ -4,8 +4,6 @@
 #include "PrivateKey.h"
 #include "BigInteger.h"
 
-namespace CK {
-
 class RSAPrivateKey : public PrivateKey {
 
     public:
@@ -44,7 +42,5 @@ class RSAPrivateKey : public PrivateKey {
         KeyType keyType;
 
 };
-
-}
 
 #endif  // RSAPRIVATEKEY_H_INCLUDED

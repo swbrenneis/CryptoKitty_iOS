@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CryptoKitty_iOS.xcodeproj">
+      location = "group:../../../../Library/Developer/Xcode/DerivedData/coder_iOS-agqnydbktmdwsnaymknbuctojuje/Build/Products/Debug-iphonesimulator/coder_iOS.framework">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

@@ -1,19 +1,17 @@
 #ifndef AUTHENTICATIONEXCEPTION_H_INCLUDED
 #define AUTHENTICATIONEXCEPTION_H_INCLUDED
 
-#include "Exception.h"
+#include "CKException.h"
 
-namespace CK {
-
-class AuthenticationException : public Exception {
+class AuthenticationException : public CKException {
 
     protected:
         AuthenticationException() {}
 
     public:
-        AuthenticationException(const std::string& msg) : Exception(msg) {}
-        AuthenticationException(const Exception& other)
-                : Exception(other) {}
+        AuthenticationException(const std::string& msg) : CKException(msg) {}
+        AuthenticationException(const CKException& other)
+                : CKException(other) {}
 
     private:
         AuthenticationException& operator= (const AuthenticationException& other);
@@ -22,7 +20,5 @@ class AuthenticationException : public Exception {
         ~AuthenticationException() {}
 
 };
-
-}
 
 #endif // AUTHENTICATIONEXCEPTION_H_INCLUDED

@@ -4,8 +4,6 @@
 #include <string.h>
 #include <climits>
 
-namespace CK {
-
 // Static initializers
 const uint64_t SHA384::H1 = 0xcbbb9d5dc1059ed8;
 const uint64_t SHA384::H2 = 0x629a292a367cd507;
@@ -275,6 +273,3 @@ uint64_t SHA384::Sigma1(uint64_t x) const {
     return ror(x, 14) ^ ror(x, 18) ^ ror(x, 41);
 
 }
-
-}
-

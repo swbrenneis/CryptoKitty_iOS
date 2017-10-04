@@ -1,17 +1,15 @@
 #ifndef DECRYPTIONEXCEPTION_H_INCLUDED
 #define DECRYPTIONEXCEPTION_H_INCLUDED
 
-#include "Exception.h"
+#include "CKException.h"
 
-namespace CK {
-
-class DecryptionException : public Exception {
+class DecryptionException : public CKException {
 
     public:
         // No oracles please.
-        DecryptionException() : Exception("Decryption failed") {}
-        DecryptionException(const Exception& other)
-                : Exception(other) {}
+        DecryptionException() : CKException("Decryption failed") {}
+        DecryptionException(const DecryptionException& other)
+                : CKException(other) {}
 
     private:
         DecryptionException& operator= (const DecryptionException& other);
@@ -20,7 +18,5 @@ class DecryptionException : public Exception {
         ~DecryptionException() {}
 
 };
-
-}
 
 #endif // DECRYPTIONEXCEPTION_H_INCLUDED

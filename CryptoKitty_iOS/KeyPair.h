@@ -4,8 +4,6 @@
 /*
  * Key pair POD with copy protection.
  */
-namespace CK {
-
 template<class Pu, class Pr> class KeyPair {
 
     private:
@@ -28,7 +26,5 @@ template<class Pu, class Pr> class KeyPair {
         Pr* prvKey;
 
 };
-
-}
 
 #endif  // KEYPAIR_H_INCLUDED

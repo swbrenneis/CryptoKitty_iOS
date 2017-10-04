@@ -2,8 +2,6 @@
 #include "BigInteger.h"
 #include "CCSecureRandom.h"
 
-namespace CK {
-
 /*
  * Diffie-Hellman key exchange.
  */
@@ -117,6 +115,3 @@ void DHKeyExchange::setModulus(const BigInteger& mod) {
     p = mod;
 
 }
-
-}
-

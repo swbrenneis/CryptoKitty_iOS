@@ -11,30 +11,26 @@
 
 #include "coder_iOS/ByteStreamCodec.h"
 
-namespace CK {
+class RSAPrivateKey;
+class RSAPublicKey;
 
-    class RSAPrivateKey;
-    class RSAPublicKey;
+class RSACodec : public coder::ByteStreamCodec {
 
-    class RSACodec : public coder::ByteStreamCodec {
+public:
+    RSACodec();
+    RSACodec(const coder::ByteArray& text);
+    RSACodec(const RSACodec& other);
+    ~RSACodec();
 
-    public:
-        RSACodec();
-        RSACodec(const coder::ByteArray& text);
-        RSACodec(const RSACodec& other);
-        ~RSACodec();
-
-    public:
-        void decrypt(const RSAPrivateKey& privateKey);
-        void encrypt(const RSAPublicKey& publicKey);
-        const coder::ByteArray& toArray() const { return text; }
+public:
+    void decrypt(const RSAPrivateKey& privateKey);
+    void encrypt(const RSAPublicKey& publicKey);
+    const coder::ByteArray& toArray() const { return text; }
 
 
-    private:
-        coder::ByteArray text;
+private:
+    coder::ByteArray text;
 
-    };
-
-}
+};
 
 #endif /* RSACodec_h */

@@ -5,8 +5,6 @@
 #include "BigInteger.h"
 #include <cstdint>
 
-namespace CK {
-
 class BlockCipher;
 
 /*
@@ -52,7 +50,5 @@ class GCM : public AEADCipherMode {
         coder::ByteArray A;    // Authenticated data
 
 };
-
-}
 
 #endif  // GCM_H_INCLUDED

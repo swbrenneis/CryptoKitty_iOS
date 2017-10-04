@@ -16,11 +16,11 @@ class ByteArrayInputStream {
         ByteArrayInputStream& operator= (const ByteArrayInputStream& other);
 
     public:
-        unsigned available() const;
+        unsigned long available() const;
         bool eof() const;
         uint8_t read();
         void read(ByteArray& bytes);
-        void read(ByteArray& bytes, unsigned offset, unsigned length);
+        void read(ByteArray& bytes, unsigned long offset, unsigned long length);
         void reset();
 
     private:

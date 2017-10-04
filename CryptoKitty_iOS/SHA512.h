@@ -5,8 +5,6 @@
 
 #include <deque>
 
-namespace CK {
-        
 /*
  * SHA-512 message digest implementation.
  */
@@ -54,7 +52,5 @@ class SHA512 : public DigestBase {
         static const coder::ByteArray DER;
 
 };
-
-}
 
 #endif  // SHA512_H_INCLUDED

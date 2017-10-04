@@ -1,7 +1,5 @@
 #include "PrivateKey.h"
 
-namespace CK {
-
 PrivateKey::PrivateKey(const std::string& alg)
 : algorithm(alg) {
 }
@@ -9,4 +7,3 @@ PrivateKey::PrivateKey(const std::string& alg)
 PrivateKey::~PrivateKey() {
 }
 
-}

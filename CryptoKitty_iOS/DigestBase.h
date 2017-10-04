@@ -4,8 +4,6 @@
 #include "Digest.h"
 #include <string>
 
-namespace CK {
-
 /*
  * Digest base implementation class.
  * The class is abstract. Also includes a convenience method
@@ -38,7 +36,5 @@ class DigestBase : public Digest {
         coder::ByteArray accumulator;
 
 };
-
-}
 
 #endif  // DIGESTBASE_H_INCLUDED

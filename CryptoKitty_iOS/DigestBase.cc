@@ -1,7 +1,5 @@
 #include "DigestBase.h"
 
-namespace CK {
-
 /*
  * This class provides some common functionality.
  * It is not intended to provide a functioning digest.
@@ -70,6 +68,3 @@ void DigestBase::update(const coder::ByteArray& bytes, unsigned offset, unsigned
     accumulator.append(bytes.range(offset, length));
 
 }
-
-}
-

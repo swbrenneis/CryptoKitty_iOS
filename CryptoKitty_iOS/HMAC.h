@@ -3,8 +3,6 @@
 
 #include <coder_iOS/ByteArray.h>
 
-namespace CK {
-
 class Digest;
 
 /*
@@ -42,7 +40,5 @@ class HMAC {
         coder::ByteArray text;
 
 };
-
-}
 
 #endif  // HMAC_H_INCLUDED

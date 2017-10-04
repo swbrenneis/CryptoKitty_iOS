@@ -3,8 +3,6 @@
 
 #include "RSA.h"
 
-namespace CK {
-
 class Digest;
 
 class PKCS1rsassa : public RSA {
@@ -36,5 +34,4 @@ class PKCS1rsassa : public RSA {
 
 };
 
-}
 #endif  // PKCS1RSASSA_H_INCLUDED

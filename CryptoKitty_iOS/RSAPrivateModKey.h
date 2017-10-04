@@ -4,8 +4,6 @@
 #include "RSAPrivateKey.h"
 #include "BigInteger.h"
 
-namespace CK {
-
 class RSAPrivateModKey : public RSAPrivateKey {
 
     private:
@@ -32,7 +30,5 @@ class RSAPrivateModKey : public RSAPrivateKey {
         BigInteger mod; // n
 
 };
-
-}
 
 #endif  // RSAPRIVATEMODKEY_H_INCLUDED

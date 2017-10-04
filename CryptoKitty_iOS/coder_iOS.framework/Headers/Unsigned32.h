@@ -11,8 +11,8 @@ class Unsigned32 {
     public:
         Unsigned32();
         Unsigned32(uint32_t v);
-        Unsigned32(const ByteArray& encoded);
-        Unsigned32(const ByteArray& encoded, Endian endian);
+        //Unsigned32(const ByteArray& encoded);
+        Unsigned32(const ByteArray& encoded, Endian endian = bigendian);
         Unsigned32(const Unsigned32& other);
 
         ~Unsigned32();
@@ -22,13 +22,13 @@ class Unsigned32 {
 
     public:
         // Decode a byte array in the native endian order.
-        void decode(const ByteArray& encoded);
+        //void decode(const ByteArray& encoded);
         // Decode a byte array in the specified endian order.
-        void decode(const ByteArray& encoded, Endian endian);
+        void decode(const ByteArray& encoded, Endian endian = bigendian);
         // Returns an encoded array in the native endian order.
-        const ByteArray& getEncoded();
+        //const ByteArray& getEncoded();
         // Returns an encoded array in the specified endian order.
-        const ByteArray& getEncoded(Endian endian);
+        const ByteArray& getEncoded(Endian endian = bigendian);
         // Returns an unsigned integer.
         uint32_t getValue() const;
         // Sets the unsigned value.
@@ -37,7 +37,7 @@ class Unsigned32 {
         std::string toHexString(Endian e, bool prefix = false);
 
     private:
-        void endianTest();
+        //void endianTest();
         void encode(Endian eType);
 
     private:

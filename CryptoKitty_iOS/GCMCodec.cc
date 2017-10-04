@@ -6,15 +6,13 @@
 //  Copyright © 2016 CryptoKitty. All rights reserved.
 //
 
-#include "GCMCodec.hpp"
+#include "GCMCodec.h"
 #include "GCM.h"
 #include "AES.h"
 #include "CCSecureRandom.h"
 #include "EncodingException.h"
 #include "BadParameterException.h"
 #include "AuthenticationException.h"
-
-namespace CK {
 
 GCMCodec::GCMCodec() {
     
@@ -72,4 +70,3 @@ void GCMCodec::encrypt(const coder::ByteArray& key, const coder::ByteArray& ad) 
 
 }
 
-}

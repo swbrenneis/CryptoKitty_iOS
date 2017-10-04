@@ -10,21 +10,19 @@
 #define EXCEPTION_THROW_SPEC noexcept
 #endif
 
-namespace CK {
-
-class Exception  : public std::exception {
+class CKException  : public std::exception {
 
     protected:
-        Exception() {}
-        Exception(const std::string& msg) : message(msg) {}
-        Exception(const Exception& other)
+        CKException() {}
+        CKException(const std::string& msg) : message(msg) {}
+        CKException(const CKException& other)
                 : message(other.message) {}
 
     private:
-        Exception& operator= (const Exception& other);
+        CKException& operator= (const CKException& other);
 
     public:
-        ~Exception() {}
+        ~CKException() {}
 
     public:
         const char *what() const EXCEPTION_THROW_SPEC { return message.c_str(); }
@@ -34,6 +32,4 @@ class Exception  : public std::exception {
 
 };
 
-}
-
-#endif // BADPARAMETEREXCEPTION_H_INCLUDED
+#endif // CKEXCEPTION_H_INCLUDED

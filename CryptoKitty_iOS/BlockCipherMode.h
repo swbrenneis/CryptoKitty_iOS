@@ -3,8 +3,6 @@
 
 #include "coder_iOS/ByteArray.h"
 
-namespace CK {
-
 class BlockCipherMode {
 
     protected:
@@ -25,7 +23,5 @@ class BlockCipherMode {
         virtual void setIV(const coder::ByteArray& iv)=0;
 
 };
-
-}
 
 #endif  // BLOCKCIPHERMODE_H_INCLUDED

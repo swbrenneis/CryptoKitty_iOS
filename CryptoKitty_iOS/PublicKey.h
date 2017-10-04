@@ -3,8 +3,6 @@
 
 #include <string>
 
-namespace CK {
-
 class PublicKey {
 
     private:
@@ -28,7 +26,5 @@ class PublicKey {
         std::string algorithm;
 
 };
-
-}
 
 #endif  // CKPUBLICKEY_H_INCLUDED

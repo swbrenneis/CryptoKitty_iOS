@@ -3,8 +3,6 @@
 
 #include "coder_iOS/ByteArray.h"
 
-namespace CK {
-
 class Digest;
 
 /*
@@ -29,5 +27,4 @@ class PSSmgf1 {
 
 };
 
-}
 #endif  // PSSMGF1_H_INCLUDED

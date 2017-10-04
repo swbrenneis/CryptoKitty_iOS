@@ -4,8 +4,6 @@
 #include <memory>
 #include <cstring>
 
-namespace CK {
-
 static const std::string
     ALPHABET("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/");
 static const int BUFSIZE = 100;
@@ -152,6 +150,3 @@ void Base64::encodeTriplet(uint8_t *content, int tsize, char *b64) {
     }
 
 }
-
-}
-

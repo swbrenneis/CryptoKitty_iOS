@@ -1,19 +1,17 @@
 #ifndef ENCODINGEXCEPTION_H_INCLUDED
 #define ENCODINGEXCEPTION_H_INCLUDED
 
-#include "Exception.h"
+#include "CKException.h"
 
-namespace CK {
-
-class EncodingException : public Exception {
+class EncodingException : public CKException {
 
     protected:
         EncodingException() {}
 
     public:
-        EncodingException(const std::string& msg) : Exception(msg) {}
-        EncodingException(const Exception& other)
-                : Exception(other) {}
+        EncodingException(const std::string& msg) : CKException(msg) {}
+        EncodingException(const CKException& other)
+                : CKException(other) {}
 
     private:
         EncodingException& operator= (const EncodingException& other);
@@ -22,7 +20,5 @@ class EncodingException : public Exception {
         ~EncodingException() {}
 
 };
-
-}
 
 #endif // ENCODINGEXCEPTION_H_INCLUDED

@@ -8,8 +8,6 @@ namespace coder {
     class ByteArrayOutputStream;
 }
 
-namespace CK {
-
 class RSAPublicKey;
 class RSAPrivateCrtKey;
 
@@ -53,8 +51,6 @@ class DERCodec {
         coder::ByteArray der_null;
 
 };
-
-}
 
 #endif // DERCODEC_H_INCLUDED
 

@@ -10,19 +10,19 @@
 		</data>
 		<key>Headers/ByteArray.h</key>
 		<data>
-		dthX0gZO/2gI8u/lv9WkZuZ2d/M=
+		xSuo+UjJVK6f+3cIsAFxXb4nbAI=
 		</data>
 		<key>Headers/ByteArrayInputStream.h</key>
 		<data>
-		nZZ896EE7xLagewO1R2d96frZms=
+		itII0iVTw4f+PSNig+EaMQzpF2g=
 		</data>
 		<key>Headers/ByteArrayOutputStream.h</key>
 		<data>
-		VoZIG7BEnSJABpP+uzvMEIvMrlI=
+		PaV7gCgVRK8VJsA0MIUmmB6gsQo=
 		</data>
 		<key>Headers/ByteStreamCodec.h</key>
 		<data>
-		TX2+SpDXBzTARVWNm/hQIdyDFDg=
+		FcygCnPy1QUpy/CBZt+iQypCCtc=
 		</data>
 		<key>Headers/Constants.h</key>
 		<data>
@@ -38,15 +38,15 @@
 		</data>
 		<key>Headers/Unsigned16.h</key>
 		<data>
-		bSjDcpkbJ/VXss+vcBFmkbBl4N0=
+		uf7L7bOGIGhfFCaQZbwurokkNYQ=
 		</data>
 		<key>Headers/Unsigned32.h</key>
 		<data>
-		0y5KGIgsCg7YXL/5cqtizMRJ30Q=
+		fUXZERQl2e6bkomGNNJqSigULJk=
 		</data>
 		<key>Headers/Unsigned64.h</key>
 		<data>
-		tgbsiIWNc6OubTX8SRSrv3cnJQs=
+		2rt8T+WO+svmQmB6Zr0ft96Scwk=
 		</data>
 		<key>Headers/coder_iOS.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		AWwTEbfYxG3oCe/0Xuc14oDa3z4=
+		AQD04WhLeb7fgK5ICSGQ9BR8Qv4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -78,44 +78,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dthX0gZO/2gI8u/lv9WkZuZ2d/M=
+			xSuo+UjJVK6f+3cIsAFxXb4nbAI=
 			</data>
 			<key>hash2</key>
 			<data>
-			iBPyA2r5Y8MwwfzUxdV7Pqxd8MfsGAzyU0kghhdySDs=
+			kDdnn9E5ljsnRK3rx5M5INVrIpXDNIHeFe7gmvWrIDM=
 			</data>
 		</dict>
 		<key>Headers/ByteArrayInputStream.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nZZ896EE7xLagewO1R2d96frZms=
+			itII0iVTw4f+PSNig+EaMQzpF2g=
 			</data>
 			<key>hash2</key>
 			<data>
-			A+jRBwc9u1Zg83u/HN5ap5ebIlO1fQaD7bhfbjEGK1s=
+			IiZ62Y2pZJYv5zpCt20jA0rKdk0PiSYpYF8Fk6km1Hw=
 			</data>
 		</dict>
 		<key>Headers/ByteArrayOutputStream.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VoZIG7BEnSJABpP+uzvMEIvMrlI=
+			PaV7gCgVRK8VJsA0MIUmmB6gsQo=
 			</data>
 			<key>hash2</key>
 			<data>
-			ve0nO5ZBOv41U9dELZTLLftKuXQ8ZwBHYFPptSxskko=
+			rB6s0i1Xmu7hnkzYXeiDIeV3mqVGfI6M7MiYcrHLkns=
 			</data>
 		</dict>
 		<key>Headers/ByteStreamCodec.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TX2+SpDXBzTARVWNm/hQIdyDFDg=
+			FcygCnPy1QUpy/CBZt+iQypCCtc=
 			</data>
 			<key>hash2</key>
 			<data>
-			oPbQQRrpDqySq4Eompi1oeL1EZAZoWiY2dezICeBkz4=
+			kzsVk6GI+D+uIjWJwmeIGIH+fohcm+ibN7oz12Hvu8w=
 			</data>
 		</dict>
 		<key>Headers/Constants.h</key>
@@ -155,33 +155,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bSjDcpkbJ/VXss+vcBFmkbBl4N0=
+			uf7L7bOGIGhfFCaQZbwurokkNYQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			+HYa0fOW5Pbl22sYNdflWKV58HPzfbTjkYeIcJzFUnw=
+			FPncG8JthDtO7zYjihp221pzN9iFwUbfKVDY7rYcbsg=
 			</data>
 		</dict>
 		<key>Headers/Unsigned32.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0y5KGIgsCg7YXL/5cqtizMRJ30Q=
+			fUXZERQl2e6bkomGNNJqSigULJk=
 			</data>
 			<key>hash2</key>
 			<data>
-			d7ksZ267QAmkTzRBXnwNkenjQijWZ009n1MwZLYX5eU=
+			iSg24DEVqE6OlTsJ0BLI753ZjHbEm2L/rNiKDPNiuzQ=
 			</data>
 		</dict>
 		<key>Headers/Unsigned64.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tgbsiIWNc6OubTX8SRSrv3cnJQs=
+			2rt8T+WO+svmQmB6Zr0ft96Scwk=
 			</data>
 			<key>hash2</key>
 			<data>
-			3wUD6t3duny9DYwa0vrt3dqfiti1OydcMPu1WzTTLcg=
+			GjHDVHtD1HcO3VJVzUhRnXxyECi3+p3WMSNUT3B+AV0=
 			</data>
 		</dict>
 		<key>Headers/coder_iOS.h</key>

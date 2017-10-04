@@ -3,8 +3,6 @@
 
 #include "DigestBase.h"
 
-namespace CK {
-
 class SHA1 : public DigestBase {
 
     public:
@@ -45,5 +43,4 @@ class SHA1 : public DigestBase {
 
 };
 
-}
 #endif  // SHA1_H_INCLUDED

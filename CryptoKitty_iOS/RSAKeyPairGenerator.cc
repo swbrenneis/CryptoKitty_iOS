@@ -1,10 +1,7 @@
 #include "RSAKeyPairGenerator.h"
-#include "RSAPublicKey.h"
 #include "RSAPrivateCrtKey.h"
 #include "RSAPrivateModKey.h"
 #include "SecureRandom.h"
-
-namespace CK {
 
 // Static initialization
 const BigInteger RSAKeyPairGenerator::THREE(3);
@@ -88,4 +85,3 @@ KeyPair<RSAPublicKey, RSAPrivateKey> *RSAKeyPairGenerator::generateKeyPair(bool 
 
 }
 
-}

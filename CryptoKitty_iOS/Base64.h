@@ -4,8 +4,6 @@
 #include "coder_iOS/ByteArray.h"
 #include <iostream>
 
-namespace CK {
-
 class Base64 {
 
     public:
@@ -31,8 +29,6 @@ class Base64 {
         coder::ByteArray data;
 
 };
-
-}
 
 #endif // BASE64_H_INCLUDED
 

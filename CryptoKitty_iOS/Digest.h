@@ -5,8 +5,6 @@
 #include <string>
 #include <cstdint>
 
-namespace CK {
-
 /*
  * Abstract base class for all digests and hashes.
  */
@@ -41,7 +39,5 @@ class Digest {
         virtual coder::ByteArray finalize(const coder::ByteArray& bytes) const=0;
 
 };
-
-}
 
 #endif  // DIGEST_H_INCLUDED

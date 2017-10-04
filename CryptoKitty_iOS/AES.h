@@ -3,8 +3,6 @@
 
 #include "BlockCipher.h"
 
-namespace CK {
-
 class AES : public BlockCipher {
 
    public:
@@ -87,7 +85,5 @@ class AES : public BlockCipher {
         static const StateArray invax;
 
 };
-
-}
 
 #endif  // AES_H_INCLUDED

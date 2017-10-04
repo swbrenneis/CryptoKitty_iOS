@@ -1,19 +1,17 @@
 #ifndef SIGNATUREEXCEPTION_H_INCLUDED
 #define SIGNATUREEXCEPTION_H_INCLUDED
 
-#include "Exception.h"
+#include "CKException.h"
 
-namespace CK {
-
-class SignatureException : public Exception {
+class SignatureException : public CKException {
 
     protected:
         SignatureException() {}
 
     public:
-        SignatureException(const std::string& msg) : Exception(msg) {}
+        SignatureException(const std::string& msg) : CKException(msg) {}
         SignatureException(const SignatureException& other)
-                : Exception(other) {}
+                : CKException(other) {}
 
     private:
         SignatureException& operator= (const SignatureException& other);
@@ -22,7 +20,5 @@ class SignatureException : public Exception {
         ~SignatureException() {}
 
 };
-
-}
 
 #endif // SIGNATUREEXCEPTION_H_INCLUDED

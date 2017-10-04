@@ -4,8 +4,6 @@
 #include "BadParameterException.h"
 #include <cmath>
 
-namespace CK {
-        
 PSSmgf1::PSSmgf1(Digest *digest)
 : hash(digest) {
 }
@@ -40,6 +38,3 @@ coder::ByteArray PSSmgf1::generateMask(const coder::ByteArray& mgfSeed, int mask
     return T.range(0, maskLen);
 
 }
-
-}
-

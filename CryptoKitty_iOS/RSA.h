@@ -3,8 +3,6 @@
 
 #include "BigInteger.h"
 
-namespace CK {
-
 class RSAPublicKey;
 class RSAPrivateKey;
 
@@ -36,7 +34,5 @@ class RSA {
         BigInteger rsavp1(const RSAPublicKey& K, const BigInteger& s); 
 
 };
-
-}
 
 #endif  // RSA_H_INCLUDED

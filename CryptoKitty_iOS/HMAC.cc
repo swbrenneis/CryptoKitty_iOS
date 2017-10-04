@@ -4,8 +4,6 @@
 #include "CCSecureRandom.h"
 #include "Digest.h"
 
-namespace CK {
-
 HMAC::HMAC(Digest *digest)
 : hash(digest) {
 
@@ -101,6 +99,3 @@ void HMAC::setMessage(const coder::ByteArray& m) {
     text = m;
 
 }
-
-}
-

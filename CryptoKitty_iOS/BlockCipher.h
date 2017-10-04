@@ -3,8 +3,6 @@
 
 #include "coder_iOS/ByteArray.h"
 
-namespace CK {
-
 class BlockCipher {
 
     protected:
@@ -26,7 +24,5 @@ class BlockCipher {
         virtual void reset() = 0;
 
 };
-
-}
 
 #endif  // BLOCKCIPHER_H_INCLUDED

@@ -5,8 +5,6 @@
 #include "coder_iOS/ByteArrayInputStream.h"
 #include "coder_iOS/ByteArrayOutputStream.h"
 
-namespace CK {
-
 static const uint8_t INTEGER_TAG = 0x02;
 static const uint8_t NULL_TAG = 0x05;
 static const uint8_t BIT_STRING_TAG = 0x03;
@@ -186,6 +184,3 @@ void DERCodec::setLength(coder::ByteArrayOutputStream& out, unsigned length) {
     }
 
 }
-
-}
-

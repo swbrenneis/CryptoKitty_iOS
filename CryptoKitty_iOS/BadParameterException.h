@@ -1,19 +1,17 @@
 #ifndef BADPARAMETEREXCEPTION_H_INCLUDED
 #define BADPARAMETEREXCEPTION_H_INCLUDED
 
-#include "Exception.h"
+#include "CKException.h"
 
-namespace CK {
-
-class BadParameterException : public Exception {
+class BadParameterException : public CKException {
 
     protected:
         BadParameterException() {}
 
     public:
-        BadParameterException(const std::string& msg) : Exception(msg) {}
+        BadParameterException(const std::string& msg) : CKException(msg) {}
         BadParameterException(const BadParameterException& other)
-                : Exception(other) {}
+                : CKException(other) {}
 
     private:
         BadParameterException& operator= (const BadParameterException& other);
@@ -22,7 +20,5 @@ class BadParameterException : public Exception {
         ~BadParameterException() {}
 
 };
-
-}
 
 #endif // BADPARAMETEREXCEPTION_H_INCLUDED

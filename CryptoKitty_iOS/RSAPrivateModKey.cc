@@ -1,8 +1,6 @@
 #include "RSAPrivateModKey.h"
 #include "BadParameterException.h"
 
-namespace CK {
-
 RSAPrivateModKey::RSAPrivateModKey(const BigInteger& d,
                 const BigInteger& n)
 : RSAPrivateKey(KeyType::mod),
@@ -44,7 +42,5 @@ BigInteger RSAPrivateModKey::rsasp1(const BigInteger& m) const {
 
     // Let s = m^d mod n.
     return BigInteger(m.modPow(prvExp, mod));
-
-}
 
 }

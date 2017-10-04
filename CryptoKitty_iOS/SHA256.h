@@ -4,8 +4,6 @@
 #include "DigestBase.h"
 #include <deque>
 
-namespace CK {
-
 /*
  * SHA-256 message digest implementation.
  */
@@ -53,7 +51,5 @@ class SHA256 : public DigestBase {
         static const coder::ByteArray DER;
 
 };
-
-}
 
 #endif  // SHA256_H_INCLUDED

@@ -11,8 +11,6 @@
 #include "BadParameterException.h"
 #include <memory>
 
-namespace CK {
-
 OAEPrsaes::OAEPrsaes(HashAlgorithm ha)
 : algorithm(ha),
   label(0),
@@ -255,6 +253,3 @@ bool OAEPrsaes::verify(const RSAPublicKey& K, const coder::ByteArray& M,
                                                             const coder::ByteArray& S) {
     throw IllegalOperationException("Unsupported enryption operation");
 }
-
-}
-

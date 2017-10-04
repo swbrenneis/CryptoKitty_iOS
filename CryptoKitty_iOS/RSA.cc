@@ -6,8 +6,6 @@
 #include <cmath>
 #include <time.h>
 
-namespace CK {
-
 // Static initialization.
 const BigInteger RSA::MASK(0xff);
 
@@ -111,4 +109,3 @@ BigInteger RSA::rsavp1(const RSAPublicKey& K, const BigInteger& s) {
 
 }
 
-}

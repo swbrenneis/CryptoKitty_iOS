@@ -7,8 +7,6 @@ namespace coder {
     class ByteArray;
 }
 
-namespace CK {
-
 /*
  * Random number generator.
  * This class is largely unimplemented. It is intended
@@ -31,15 +29,11 @@ class Random {
         virtual void nextBytes(coder::ByteArray& bytes);
         virtual uint32_t nextInt();
         virtual uint64_t nextLong();
-
-    public:
         virtual void setSeed(uint64_t seedValue);
 
     protected:
         virtual uint64_t next(int bits);
 
 };
-
-}
 
 #endif  // RANDOM_H_INCLUDED

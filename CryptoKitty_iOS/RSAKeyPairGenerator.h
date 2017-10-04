@@ -3,12 +3,12 @@
 
 #include "BigInteger.h"
 #include "KeyPair.h"
-
-namespace CK {
+#include "RSAPublicKey.h"
+#include "RSAPrivateKey.h"
 
 class SecureRandom;
-class RSAPublicKey;
-class RSAPrivateKey;
+
+typedef KeyPair<RSAPublicKey, RSAPrivateKey> RSAKeyPair;
 
 class RSAKeyPairGenerator {
 
@@ -22,7 +22,7 @@ class RSAKeyPairGenerator {
                 operator= (const RSAKeyPairGenerator& other);
 
     public:
-        KeyPair<RSAPublicKey, RSAPrivateKey> *generateKeyPair(bool crt = true);
+        RSAKeyPair *generateKeyPair(bool crt = true);
         void initialize(int bits, SecureRandom* secure);
 
     private:
@@ -32,7 +32,5 @@ class RSAKeyPairGenerator {
         static const BigInteger THREE;
 
 };
-
-}
 
 #endif	// RSAKEYPAIRGENERATOR_H_INCLUDED
