@@ -20,4 +20,10 @@ FOUNDATION_EXPORT const unsigned char CryptoKitty_iOSVersionString[];
 #import <CryptoKitty_iOS/CKRSAPublicKey.h>
 #import <CryptoKitty_iOS/CKRSAKeyPair.h>
 #import <CryptoKitty_iOS/CKRSAKeyPairGenerator.h>
+#import <CryptoKitty_iOS/CKSecureRandom.h>
+#import <CryptoKitty_iOS/CKSHA1.h>
+#import <CryptoKitty_iOS/CKSHA256.h>
+#import <CryptoKitty_iOS/CKPEMCodec.h>
+#import <CryptoKitty_iOS/CKRSACodec.h>
+
 

@@ -1,5 +1,5 @@
-#ifndef EXCEPTION_H_INCLUDED
-#define EXCEPTION_H_INCLUDED
+#ifndef CKEXCEPTION_H_INCLUDED
+#define CKEXCEPTION_H_INCLUDED
 
 #include <exception>
 #include <string>
