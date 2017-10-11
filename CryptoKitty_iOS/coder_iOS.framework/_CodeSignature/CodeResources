@@ -32,6 +32,18 @@
 		<data>
 		lqfbUBYJcFEi4ln4fmmBhm87qWU=
 		</data>
+		<key>Headers/Int16.h</key>
+		<data>
+		YDx6Yc+/OeRffut7iBX277GJ4/Y=
+		</data>
+		<key>Headers/Int32.h</key>
+		<data>
+		7Fo1f4GqQxHLfX8+JPvWytVbOHc=
+		</data>
+		<key>Headers/Int64.h</key>
+		<data>
+		wcG1pbaZmsQ33pCAlokYJz3Mx/U=
+		</data>
 		<key>Headers/OutOfRangeException.h</key>
 		<data>
 		sUJbN4606GgnZ3Bm1jo07w+7KtU=
@@ -50,7 +62,7 @@
 		</data>
 		<key>Headers/coder_iOS.h</key>
 		<data>
-		Hr4pvI4Qpw8Vl8vCKK7aL9x54y0=
+		NBpOXmbghJ1i7urVWMdYaqvQAcA=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -140,6 +152,39 @@
 			L4G5D3MN7TSLWuVNOaYwht4qL0zxfytGafQxXDNT51s=
 			</data>
 		</dict>
+		<key>Headers/Int16.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YDx6Yc+/OeRffut7iBX277GJ4/Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			yRnP+eod53lv7FFWR3tHYZtNzUpVtjOt/7KZh+e0NZ4=
+			</data>
+		</dict>
+		<key>Headers/Int32.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7Fo1f4GqQxHLfX8+JPvWytVbOHc=
+			</data>
+			<key>hash2</key>
+			<data>
+			ylMf8Ve4A37YNV/sswu0vwoo2qg8C3o2fHozf/eBV7M=
+			</data>
+		</dict>
+		<key>Headers/Int64.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wcG1pbaZmsQ33pCAlokYJz3Mx/U=
+			</data>
+			<key>hash2</key>
+			<data>
+			iY+NG0T3W3cwv3z3K8nbkx/ePkbzBhALZw8YkibzQEY=
+			</data>
+		</dict>
 		<key>Headers/OutOfRangeException.h</key>
 		<dict>
 			<key>hash</key>
@@ -188,11 +233,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Hr4pvI4Qpw8Vl8vCKK7aL9x54y0=
+			NBpOXmbghJ1i7urVWMdYaqvQAcA=
 			</data>
 			<key>hash2</key>
 			<data>
-			rxzVp8yAdFppr7Et1/MHrXy6YK1Rv9Tf64cdnIuX0w0=
+			LHVixrPxvua/cQXOiEi0S7HcDbtUqSDCurUn3pmy5+A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

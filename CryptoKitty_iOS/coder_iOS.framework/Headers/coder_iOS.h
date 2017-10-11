@@ -16,4 +16,14 @@ FOUNDATION_EXPORT const unsigned char coder_iOSVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <coder_iOS/PublicHeader.h>
 
+#import <coder_iOS/ByteArray.h>
+#import <coder_iOS/ByteArrayInputStream.h>
+#import <coder_iOS/ByteArrayOutputStream.h>
+#import <coder_iOS/ByteStreamCodec.h>
+#import <coder_iOS/Int16.h>
+#import <coder_iOS/Int32.h>
+#import <coder_iOS/Int64.h>
+#import <coder_iOS/Unsigned16.h>
+#import <coder_iOS/Unsigned32.h>
+#import <coder_iOS/Unsigned64.h>
 
