@@ -88,7 +88,6 @@
 		5586D1691F8474B7004F198F /* CKRSAKeyPairGenerator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5586D1671F8474B7004F198F /* CKRSAKeyPairGenerator.mm */; };
 		5586D1741F852473004F198F /* CKSecureRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 5586D1721F852473004F198F /* CKSecureRandom.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5586D1751F852473004F198F /* CKSecureRandom.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5586D1731F852473004F198F /* CKSecureRandom.mm */; };
-		5586D1771F854D0A004F198F /* coder_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5586D1761F854D0A004F198F /* coder_iOS.framework */; };
 		5586D17E1F8550CD004F198F /* CKSHA256.h in Headers */ = {isa = PBXBuildFile; fileRef = 5586D17C1F8550CD004F198F /* CKSHA256.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5586D17F1F8550CD004F198F /* CKSHA256.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5586D17D1F8550CD004F198F /* CKSHA256.mm */; };
 		5586D1841F856188004F198F /* CKSHA1.h in Headers */ = {isa = PBXBuildFile; fileRef = 5586D1821F856188004F198F /* CKSHA1.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -201,7 +200,6 @@
 		5586D1671F8474B7004F198F /* CKRSAKeyPairGenerator.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CKRSAKeyPairGenerator.mm; sourceTree = "<group>"; };
 		5586D1721F852473004F198F /* CKSecureRandom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKSecureRandom.h; sourceTree = "<group>"; };
 		5586D1731F852473004F198F /* CKSecureRandom.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CKSecureRandom.mm; sourceTree = "<group>"; };
-		5586D1761F854D0A004F198F /* coder_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = coder_iOS.framework; sourceTree = "<group>"; };
 		5586D17C1F8550CD004F198F /* CKSHA256.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKSHA256.h; sourceTree = "<group>"; };
 		5586D17D1F8550CD004F198F /* CKSHA256.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CKSHA256.mm; sourceTree = "<group>"; };
 		5586D1821F856188004F198F /* CKSHA1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKSHA1.h; sourceTree = "<group>"; };
@@ -222,7 +220,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5586D1771F854D0A004F198F /* coder_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +257,6 @@
 		550AB3971DF8E8ED00960773 /* CryptoKitty_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				5586D1761F854D0A004F198F /* coder_iOS.framework */,
 				5586D15B1F843232004F198F /* Wrappers */,
 				550ED98D1E07823A00D7D64F /* AEADCipherMode.h */,
 				550ED9331E07784800D7D64F /* AES.h */,
